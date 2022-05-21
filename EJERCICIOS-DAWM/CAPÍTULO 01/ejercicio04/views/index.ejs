@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <p class="titulo"><%= ejercicio %></p>
+
+    <p class="instrucciones">Agregue un formulario (etiqueta <span class="etiqueta"><span class="simbolo"><</span>form<span class="simbolo">></span></span>) con un identificador (atributo <span class="etiqueta">id</span> con el valor <span class="etiqueta">formulario</span>), 
+      cuyos con los campos: <span class="texto">Nombres completos (tipo: texto, requerido)</span> (etiqueta <span class="etiqueta"><span class="simbolo"><</span>input<span class="simbolo">></span></span>), <span class="texto">Correo electrónico (tipo: correo, requerido)</span>, <span class="texto">Género (tipo: radio - valores: Masculino, Femenino, Otro - solo una opción es posible escoger)</span>, <span class="texto">Fecha de nacimiento (tipo: fecha)</span>, <span class="texto">Sistema Operativo (tipo: selección - una lista de valores: Windows, MacOS y Linux)</span> (etiqueta <span class="etiqueta"><span class="simbolo"><</span>select<span class="simbolo">></span></span>), <span class="texto">Mensaje (tipo: área de texto, 10 filas y 30 columnas)</span> (etiqueta <span class="etiqueta"><span class="simbolo"><</span>textarea<span class="simbolo">></span></span>), <span class="texto">Puntuación (tipo: número - mínimo: 1, máximo: 10, incremento: 1)</span>, <span class="texto">No soy un robot (tipo: caja de verificación, requerido)</span>, y <span class="texto">Enviar (tipo: botón)</span> (etiqueta <span class="etiqueta"><span class="simbolo"><</span>button<span class="simbolo">></span></span>).
+      
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+        <form id="formulario"> <br/>
+        Nombres completos: <input type="text" name="Nombres"> <br/>
+        Correo electrónico: <input type="email" name="correo"> <br/>
+        <label>Género:</label> <br/>
+        <input type="radio" name="sex"> Masculino <br/>
+        <input type="radio" name="sex"> Femenino <br/>
+        <input type="radio" name="sex"> Otro <br/>
+        Fecha de nacimiento:
+        <input type="date" name="fecha" value="mm/dd/yyyy" min="1/1/1900" max="12/31/2022"><br/>
+        Sistema Operativo: 
+        <select>
+          <option>Windows</option>
+          <option>MacOs</option>
+          <option>Linux</option>
+        </select><br />
+        Mensaje:
+        <textarea rows="10" cols="30" name="Mensaje"></textarea><br/>
+        Puntuación:
+       <input type="number" min="1" max="10" step="1"><br/>
+        <input type="checkbox" name="robot">No soy un robot<br/>
+        <button>
+          Enviar
+        </button>
+      </form>
+      <!-- Fin -->
+    </div>
+
+
+  </body>
+</html>
