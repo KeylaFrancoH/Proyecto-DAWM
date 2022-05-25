@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+body{
+    background-color: rgb(214,237,216);
+    font-family: 'Bree Serif', serif;
+}
+
+.logo{
+    float: left;
+    display: flex;
+    padding: auto;
+}
+
+.logotipo{
+    width: 80px;
+    height: 60px;
+    margin-left:  10px;
+
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vw;
+    background-color: rgb(214,237,216);
+    color: rgb(109, 48, 104);
+}
+
+.barra_nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2pm;
+}
+
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu .select{
+    color: #2335d9;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.menu a:hover{
+    background-color: rgb(237,214,235);
+    color: black
+}
