@@ -1,55 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,800&display=swap');
+
 body{
-    background-color: rgb(214,237,216);
     font-family: 'Bree Serif', serif;
+    margin: 0%;
+    background-color: #000706;
 }
-
-.logo{
-    float: left;
-    display: flex;
-    padding: auto;
+a{
+    text-decoration: none;
+    padding: 10px;
 }
-
-.logotipo{
-    width: 80px;
-    height: 60px;
-    margin-left:  10px;
-
-}
-
-.wrapper{
-    width: 100vw;
-    height: 100vw;
-    background-color: rgb(214,237,216);
-    color: rgb(109, 48, 104);
-}
-
-.barra_nav{
+header{
     display: flex;
     justify-content: space-between;
-    padding: 2pm;
+    min-height: 50px;
+    background-color: #00B89F;
+    align-items: center;
+    padding: 10px;
 }
 
-
-.menu{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-}
-.menu li{
-    list-style: none;
+.logo img{
+    position: absolute;
+    height: 75px;
+    margin-right: 10px;
+    top: -4px;
+    left: 20px;
 }
 
-.menu .select{
-    color: #2335d9;
+nav a{
+    font-weight: 500;
+    padding-right: 10px;
+    color: #F3FFFD;
 }
 
-.menu a{
-    text-decoration: none;
-    padding: 10px 10px;
+nav a:hover{
+    color: #B84300;
 }
 
-.menu a:hover{
-    background-color: rgb(237,214,235);
-    color: black
+@media screen and (max-width:700px){
+    header{
+        flex-direction: column;
+        margin: 0;
+    }
+    nav{
+        padding: 1px 0px;
+    }
 }
