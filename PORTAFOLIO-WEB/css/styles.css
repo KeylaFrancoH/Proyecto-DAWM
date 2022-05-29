@@ -13,7 +13,7 @@ body{
     margin: 0%;
     background-color: #000706;
 }
-
+/* Estilos de la Barra de navegación */
 header{
     display: flex;
     justify-content: space-between;
@@ -85,6 +85,49 @@ li a:hover{
 #check{
     display: none;
 }
+/* Fin de estilos de barra de navegación */
+
+.inicio{
+    color: #F3FFFD;
+    padding-top: 190px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+}
+
+.inicio .contenedor-inicio h3{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.inicio .contenedor-inicio p{
+    width: 540px;
+    max-width: 900px;
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.inicio .contenedor-inicio h1{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 20px 0px;
+}
+
+.inicio .contenedor-inicio h1 span{
+    color: #B80075;
+}
+
+.social a{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 20px;
+    color:#00B89F;
+    height: 50px;
+    width: 50px;
+}
 
 @media(max-width: 950px){
     .logo{
@@ -95,11 +138,10 @@ li a:hover{
     }
 }
 
-@media (max-width: 850px){ 
+@media screen and (max-width: 850px){ 
     .check_b{
         display: inline-flex;
     }
-
     nav ul{
         position: fixed;
         width: 100%;
