@@ -16,7 +16,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Centrando la imagen', function() {
+    it('Modifique el archivo public/stylesheets/relative.css Centrando la imagen', function() {
 
       return request(app)
         .get('/stylesheets/relative.css')
@@ -29,7 +29,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Estilo de la imagen', function() {
+    it('Modifique el archivo public/stylesheets/relative.css Estilo de la imagen', function() {
 
       return request(app)
         .get('/stylesheets/relative.css')
@@ -40,7 +40,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Centrando el texto', function() {
+    it('Modifique el archivo public/stylesheets/relative.css Centrando el texto', function() {
 
       return request(app)
         .get('/stylesheets/relative.css')
@@ -53,7 +53,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Estilo del texto', function() {
+    it('Modifique el archivo public/stylesheets/relative.css Estilo del texto', function() {
 
       return request(app)
         .get('/stylesheets/relative.css')
@@ -73,7 +73,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Reposicionando el texto', function() {
+    it('Modifique el archivo public/stylesheets/relative.css Reposicionando el texto', function() {
 
       return request(app)
         .get('/stylesheets/relative.css')
