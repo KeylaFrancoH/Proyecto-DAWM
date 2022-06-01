@@ -45,6 +45,10 @@ body {
   height: 75px;
 }
 
+.logo{
+  margin-left: 25px;
+}
+
 .nav-bar .l-menu {
   display: flex;
   justify-content: right;
@@ -90,7 +94,7 @@ body {
 
 .inicio {
   color: var(--color-3);
-  margin-top: 190px;
+  margin-top: 150px;
   margin-bottom: 40px;
   margin-left: 150px;
 }
@@ -105,7 +109,6 @@ body {
   max-width: 900px;
   font-size: 16px;
   line-height: 1.3;
-  margin-bottom: 10px;
 }
 
 .inicio h1 {
@@ -125,6 +128,7 @@ body {
   justify-content: center;
   cursor: pointer;
   font-size: 28px;
+  margin-top: 20px;
   margin-right: 20px;
   color: var(--color-1);
   margin-bottom: 25px;
@@ -132,30 +136,74 @@ body {
 
 .social a:hover{
     color: var(--color-5);
+    transform: scale(1.1);
     transition: .5s;
 }
 
-.inicio button{
-    font-family: "Montserrat", sans-serif;
-    color:var(--color-4);
-    border-color: var(--color-1);
-    background-color: var(--color-2);
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bolder;
-    margin-top: 15px;
+.boton{
+  background-color: var(--color-4);
+  border: 2px solid var(--color-4);
+  border-radius: 20px;
+  padding: 8px 35px;
+  cursor: pointer;
+}
+
+.boton .b-contact{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-3);
+}
+
+.boton:hover{
+  background-color: transparent;
+  transition: .5s;
+}
+
+.fotoh{
+  float: right;
+  width: 200px;
+  height: 300px;
+  margin-right: 200px;
 }
 
 @media (max-width: 950px) {
   .logo {
-    padding-left: 20px;
+    margin-left: 20px;
   }
   .nav-bar .l-menu li a {
     font-size: 13px;
   }
+  .inicio {
+    margin-top: 130px;
+    margin-left: 150px;
+  }
+  .inicio h3 {
+    font-size: 15px;
+  } 
+  .inicio p {
+    width: 410px;
+    max-width: 500px;
+    font-size: 13px;
+  } 
+  .inicio h1 {
+    font-size: 25px;
+    margin: 15px 0px;
+  }
+  .social a {
+    font-size: 20px;
+  }
+  .boton{
+    border: 1.3px solid var(--color-4);
+    border-radius: 16px;
+    padding: 3px 25px;
+  }
+  .boton .b-contact{
+    font-size: 15px;
+  }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
   .check_b {
     display: inline-flex;
   }
@@ -185,10 +233,64 @@ body {
     display: flex;
     left: 0;
   }
+  .inicio {
+    margin-top: 150px;
+    margin-left: 70px;
+  }
+  
+  .inicio p {
+    width: 275px;
+    max-width: 300px;
+    font-size: 10px;
+  } 
+  .inicio h1 {
+    font-size: 17.5px;
+  }
+  .social a {
+    font-size: 15px;
+  }
+  .boton{
+    border: 1.3px solid var(--color-4);
+    border-radius: 12px;
+    padding: 2px 15px;
+  }
+  .boton .b-contact{
+    font-size: 11px;
+  }
 }
 
-@media screen and (max-width: 850px) and (orientation: landscape) {
+@media screen and (max-width: 750px) and (orientation: landscape) {
   .nav-bar .l-menu li {
     margin: 15px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .inicio {
+    margin-top: 100px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .inicio p {
+    width: 175px;
+    font-size: 8px;
+  } 
+  .inicio h3 {
+    font-size: 11px;
+  }
+  .inicio h1 {
+    font-size: 15px;
+  }
+  .social a {
+    font-size: 12px;
+    margin-right: 7px;
+  }
+  .boton{
+    border-radius: 9px;
+  }
+  .boton .b-contact{
+    font-size: 9px;
   }
 }
