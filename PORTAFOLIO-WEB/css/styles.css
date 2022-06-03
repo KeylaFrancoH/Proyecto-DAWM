@@ -6,6 +6,7 @@
   --color-4: #b80075; 
   --color-5: #b84300;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +27,6 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-1);
-  align-items: center;
 }
 
 .wrapper{
@@ -34,7 +34,9 @@ body {
 }
 
 .nav-bar {
-  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -57,11 +59,9 @@ body {
 
 .nav-bar .l-menu li {
   border-radius: 3px;
-  float: right;
 }
 
 .nav-bar .l-menu li a {
-  display: block;
   color: var(--color-3);
   font-size: 18px;
   font-weight: 500;
@@ -80,7 +80,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: var(--color-5);
-  float: right;
   line-height: 85px;
   margin-top: 15px;
   margin-right: 20px;
@@ -91,8 +90,8 @@ body {
   display: none;
 }
 /* Fin de estilos de barra de navegación */
-
 .inicio {
+  display: grid;
   color: var(--color-3);
   margin-top: 150px;
   margin-bottom: 40px;
@@ -146,9 +145,6 @@ body {
   border-radius: 20px;
   padding: 8px 35px;
   cursor: pointer;
-}
-
-.boton .b-contact{
   font-size: 18px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
@@ -160,11 +156,13 @@ body {
   transition: .5s;
 }
 
-.fotoh{
-  float: right;
-  width: 200px;
-  height: 300px;
-  margin-right: 200px;
+.foto1{
+  justify-self: right;
+  margin-right: 100px;
+  width: 20vw;
+  height: 60vh;
+  border:3px solid var(--color-1);
+  border-radius: 4px;
 }
 
 @media (max-width: 950px) {
