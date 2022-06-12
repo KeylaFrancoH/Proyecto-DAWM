@@ -29,10 +29,7 @@
     .boton .b-contact{
       font-size: 0.9rem;
     }
-    .foto img{
-        width: 18vw;
-        height: auto;
-    }
+    
   }
   
   @media screen and (max-width: 750px) {
@@ -86,13 +83,9 @@
     .boton .b-contact{
       font-size: 0.7rem;
     }
-    .foto img{
-        width: 18vw;
-        height: auto;
+    .linea-separador{
+        height: 0.5rem;
     }
-    .about img{
-        width: 25vw;
-      }
     .info-about h2{
         font-size: 1rem;
      }
@@ -155,6 +148,7 @@
     }
     .about{
         flex-direction: column-reverse;
+        padding-top: 0.2em;
     }
     .info-about h2{
         font-size: 2VW;

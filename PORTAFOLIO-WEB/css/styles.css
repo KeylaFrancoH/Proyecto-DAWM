@@ -102,13 +102,13 @@ body {
 }
 
 .inicio h3 {
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   font-weight: 200;
   padding-top: 16vw;
 }
 
 .inicio p {
-  font-size: 1.1vw;
+  font-size: 1.3vw;
   line-height: 1.3rem;
   width: 30rem;
 }
@@ -177,10 +177,18 @@ body {
 /* Fin sección Home */
 
 /* Inicio sección About me */
+.linea-separador{
+  height: 1rem;
+  width: auto;
+  background-color: var(--color-1);
+
+}
+
 .about{
   display:flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 2em;
 }
 
 .about img{
@@ -189,6 +197,18 @@ body {
   grid-column: 2/5;
   box-shadow:  -0.2rem 0.19rem 0.31rem var(--color-1);
   border-radius: 0.25rem;
+}
+
+.foto2{
+  max-width: 100%;
+  height: auto;
+}
+
+.foto2 img{ 
+  width: 25vw;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0.19rem 0.19rem 0.31rem var(--color-1);
 }
 
 .info-about{
