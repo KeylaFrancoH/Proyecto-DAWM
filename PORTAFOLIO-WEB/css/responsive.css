@@ -1,0 +1,132 @@
+@media screen and (max-width: 950px) {
+    .logo {
+      margin-left: 20px;
+    }
+    .nav-bar .l-menu li a {
+      font-size: 13px;
+    }
+    .inicio h3 {
+      font-size: 15px;
+    } 
+    .inicio p {
+      width: 410px;
+      max-width: 500px;
+      font-size: 13px;
+    } 
+    .inicio h1 {
+      font-size: 25px;
+      margin: 15px 0px;
+    }
+    .social a {
+      font-size: 20px;
+    }
+    .boton{
+      border: 1.3px solid var(--color-4);
+      border-radius: 16px;
+      padding: 3px 25px;
+    }
+    .boton .b-contact{
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .check_b {
+      display: inline-flex;
+    }
+    .nav-bar .l-menu {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      background: var(--color-1);
+      top: 63px;
+      left: 100%;
+      text-align: center;
+      flex-direction: column;
+    }
+    .nav-bar .l-menu li {
+      display: block;
+      justify-content: center;
+      margin: 30px 0 0 0;
+      line-height: 30px;
+    }
+    .nav-bar .l-menu li a {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    #check:checked ~ .l-menu {
+      display: flex;
+      left: 0;
+    }
+    .inicio p {
+      max-width: 300px;
+      font-size: 10px;
+    } 
+    .inicio h1 {
+      font-size: 17.5px;
+    }
+    .social a {
+      font-size: 15px;
+    }
+    .boton{
+      border: 1.3px solid var(--color-4);
+      border-radius: 12px;
+      padding: 2px 15px;
+    }
+    .boton .b-contact{
+      font-size: 11px;
+    }
+  }
+  
+  @media screen and (max-width: 750px) and (orientation: landscape) {
+    .nav-bar .l-menu li {
+      margin: 15px 0 0 0;
+    }
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    .inicio{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 2.5rem ;
+    }
+    
+    .inicio p{
+        text-align: center;
+        font-size: 2vw;
+    }
+    .inicio h3 {
+      font-size: 3vw;
+      text-align: center;
+    }
+    .inicio h1 {
+      font-size: 5vw;
+      text-align: center;
+    }
+    .social{
+        justify-content: center;
+    }
+    .social a {
+      font-size: 5vw;
+      margin-right: 0.4rem;
+    }
+    .b{
+        text-align: center;
+    }
+    .boton{
+      border-radius: 0.6rem;
+      padding: 0.3rem 1rem;
+      font-size: 3vw;
+    }
+    .foto{
+        padding-top: 2rem;
+    }
+    .foto img{
+        width: 30vw;
+        height: auto;
+    }
+  }
