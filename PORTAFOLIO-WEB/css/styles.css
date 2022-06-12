@@ -97,13 +97,14 @@ body {
   display: flex;
   justify-content: space-evenly;
   color: var(--color-3);
-  margin-top: 9.38rem;
-  margin-bottom: 2.5rem ;
+  padding-top: 5rem;
+  padding-bottom: 1em;
 }
 
 .inicio h3 {
   font-size: 1.3vw;
   font-weight: 200;
+  padding-top: 16vw;
 }
 
 .inicio p {
@@ -167,10 +168,53 @@ body {
 }
 
 .foto img{ 
-  width: auto;
-  height: 45vh;
+  width: 25vw;
+  height: auto;
   border:0.19rem solid var(--color-1);
   border-radius: 0.25rem;
   box-shadow: 0.19rem 0.19rem 0.31rem var(--color-1);
 }
 /* Fin sección Home */
+
+/* Inicio sección About me */
+.about{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about img{
+  width: 25vw;
+  height: auto;
+  grid-column: 2/5;
+  box-shadow:  -0.2rem 0.19rem 0.31rem var(--color-1);
+  border-radius: 0.25rem;
+}
+
+.info-about{
+  grid-column: 6/10;
+  padding: 3em;
+}
+
+.info-about h2{
+  font-size: 1.5vw;
+  color: var(--color-4);
+  font-weight: 500;
+}
+
+.separador{
+  height: 0.25rem;
+  width: 6.25rem;
+  background-color: var(--color-1);
+  margin-top: 0.63rem;
+  margin-bottom: 3em;
+}
+
+.info-about p{
+  font-size: 1.3vw;
+  color: var(--color-3);
+}
+
+.b2{
+  margin-top: 8vh;
+}
