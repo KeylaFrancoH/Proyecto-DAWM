@@ -335,12 +335,11 @@ body {
   margin-left: 5rem;
 }
 .arte .row-3 .box-container{
-  flex:1 1 40rem;
   display: flex;
-  flex-wrap: wrap;
+  height: auto;
+  width: 90vw;
   gap:1.5rem;
   padding-left: 5rem;
-  padding-right: 5rem;
   padding-bottom: 2rem;
 }
 
@@ -376,10 +375,10 @@ body {
 
 .servicios .box-container{
     display: flex;
-    flex-wrap: wrap;
+    height: auto;
+    width: 90vw;
     gap:1.5rem;
     padding-left: 5rem;
-    padding-right: 5rem;
     padding-bottom: 2rem;
 }
 
