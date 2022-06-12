@@ -21,7 +21,7 @@ body {
   margin: 0%;
   background-color: var(--color-2);
 }
-/* Estilos de la Barra de navegación */
+/* Inicio Barra de navegación */
 
 .header {
   display: flex;
@@ -90,6 +90,9 @@ body {
   display: none;
 }
 /* Fin de estilos de barra de navegación */
+
+/* Inicio Sección Home */
+
 .inicio {
   display: flex;
   justify-content: space-evenly;
@@ -170,3 +173,4 @@ body {
   border-radius: 0.25rem;
   box-shadow: 0.19rem 0.19rem 0.31rem var(--color-1);
 }
+/* Fin sección Home */
