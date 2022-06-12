@@ -1,0 +1,33 @@
+@media screen and (max-width: 1200px) {
+    .logo {
+      margin-left: 1.25rem;
+    }
+    .nav-bar .l-menu li a {
+      font-size: 0.8rem;
+    }
+    .inicio h3 {
+      font-size: 0.9rem;
+      padding-top: 7vw;
+    } 
+    .inicio p {
+      width: 26rem;
+      max-width: 31rem;
+      font-size: 0.8rem;
+    } 
+    .inicio h1 {
+      font-size: 1.6re,;
+      margin: 0.9rem 0rem;
+    }
+    .social a {
+      font-size: 1.25rem;
+    }
+    .boton{
+      border: 0.1rem solid var(--color-4);
+      border-radius: 1rem;
+      padding: 0.2rem 1.6rem;
+    }
+    .boton .b-contact{
+      font-size: 0.9rem;
+    }
+    
+  }

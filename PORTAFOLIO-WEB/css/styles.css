@@ -199,12 +199,12 @@ body {
   border-radius: 0.25rem;
 }
 
-.foto2{
+.about .foto{
   max-width: 100%;
   height: auto;
 }
 
-.foto2 img{ 
+.about .foto img{ 
   width: 25vw;
   height: auto;
   border-radius: 0.25rem;
@@ -212,11 +212,10 @@ body {
 }
 
 .info-about{
-  grid-column: 6/10;
   padding: 3em;
 }
 
-.info-about h2{
+.n-seccion{
   font-size: 1.5vw;
   color: var(--color-4);
   font-weight: 500;
@@ -224,17 +223,34 @@ body {
 
 .separador{
   height: 0.25rem;
-  width: 6.25rem;
+  width: 10rem;
   background-color: var(--color-1);
   margin-top: 0.63rem;
   margin-bottom: 3em;
 }
-
+.about .info-about .about-content{
+  display: flex;
+  padding-top: 1em;
+  color: var(--color-3);
+  padding: 0.5rem 0;
+  font-size: 1.3vw;
+  justify-content: space-between;
+}
 .info-about p{
   font-size: 1.3vw;
   color: var(--color-3);
 }
+.about .info-about .about-content .text .requirement{
+  flex:1 1 20rem;
+  color: var(--color-5);
+  font-weight: 500;
+}
 
 .b2{
   margin-top: 8vh;
+}
+/* fin sección About me */
+/* Inicio sección SKILLS */
+.skills{
+  padding-top: 2em;
 }
