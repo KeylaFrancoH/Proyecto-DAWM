@@ -194,7 +194,6 @@ body {
 .about img{
   width: 25vw;
   height: auto;
-  grid-column: 2/5;
   box-shadow:  -0.2rem 0.19rem 0.31rem var(--color-1);
   border-radius: 0.25rem;
 }
@@ -504,3 +503,13 @@ body {
   color:var(--color-2);
 }
 
+.galeria{
+  margin-top: 2em;
+}
+.galeria .n-seccion{
+  padding-left: 5rem;
+}
+
+.galeria .separador{
+  margin-left: 5rem;
+}
