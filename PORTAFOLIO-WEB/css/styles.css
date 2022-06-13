@@ -244,6 +244,21 @@ body {
   color: var(--color-5);
   font-weight: 500;
 }
+.about table, th, td{
+  border: 0.1rem solid var(--color-5);
+}
+.about th,td{
+  text-align: center;
+  font-weight: 400;
+  color: var(--color-3);
+}
+th {
+  background-color: var(--color-5);
+  font-weight: bolder;
+}
+.tabla{
+  width: 100%;
+}
 
 .b2{
   margin-top: 8vh;
