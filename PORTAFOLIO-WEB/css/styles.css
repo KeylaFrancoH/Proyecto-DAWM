@@ -459,7 +459,8 @@ body {
 }
 
 .portafolio .box-container .box h3{
-  bottom:.5rem; left:1rem;
+  bottom:.5rem; 
+  left:1rem;
   font-size: 1.3vw;
   font-weight: 900;
   color:var(--color-4);
@@ -564,3 +565,94 @@ body {
   margin-left: 5rem;
 }
 
+.contact .iconos-container{
+  display: flex;
+  gap:1.5rem;
+  height: auto;
+  width: 100vw;
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.contact .iconos-container .iconos{
+  flex:1 1 25rem;
+  text-align: center;
+  padding:2rem;
+  background:var(--color-3);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+
+.contact .iconos-container .iconos i{
+  height:2.5rem;
+  width:2.5rem;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  background: var(--color-5);
+  color:var(--color-3);
+  border-radius: 50%;
+}
+
+.contact .iconos-container .iconos h3{
+  color:#111;
+  font-size: 1.3vw;
+  font-weight: bolder;
+  padding:.5rem 0;
+  padding-top: 1rem;
+}
+
+.contact .iconos-container .iconos p{
+  color:#666;
+  font-size: 1.1vw;
+}
+
+.contact .formulario{
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 2em;
+}
+
+.contact .formulario form{
+  background:var(--color-3);
+  padding:0 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+
+.contact .boton:hover{
+  color: var(--color-2);
+  font-weight: 900;
+}
+
+.contact .formulario .map{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.contact .formulario form .box,
+.contact .formulario form textarea{
+  width: 100%;
+  border-radius: 0.5rem;
+  border-bottom: .1rem solid #333;
+  color:#333;
+  text-transform: none;
+  font-size: 1.1vw;
+  padding:1rem 0;
+  margin:1rem 0;
+  padding-left: 2em;
+}
+
+footer{
+  background-color: var(--color-1);
+  color: var(--color-4);
+}
+
+footer p{
+  padding-left: 5rem;
+  font-size: 1.1vw;
+  font-weight: bolder;
+}
