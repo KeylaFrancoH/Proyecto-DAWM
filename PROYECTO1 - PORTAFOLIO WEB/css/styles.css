@@ -26,9 +26,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
   background-color: var(--color-1);
-  align-items: center;
 }
 
 .wrapper {
@@ -45,18 +43,18 @@ body {
   align-items: center;
 }
 
-.logotipo {
-  height: 4rem;
-}
-
 .logo {
   margin-left: 1.6rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo img {
+  height: 4rem;
 }
 
 .nav-bar .l-menu {
   display: flex;
-  justify-content: right;
-  margin-top: 1rem;
 }
 
 .nav-bar .l-menu li {
@@ -446,7 +444,7 @@ tr:hover {
   padding-top: 1rem;
 }
 
-.servicios .box-container .box p {
+.servicios .box-container .box span {
   color: #666;
   font-size: 1vw;
   text-align: center;
@@ -524,7 +522,7 @@ tr:hover {
   text-align: center;
 }
 
-.portafolio .box-container .box span {
+.portafolio .box-container .box p {
   bottom: .5rem;
   left: 1rem;
   font-size: 1vw;
@@ -648,7 +646,7 @@ tr:hover {
 .contact .iconos-container .iconos {
   flex: 1 1 0;
   text-align: center;
-  padding: 2rem;
+  padding: 3vw;
   background: var(--color-3);
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
   border-radius: .5rem;
