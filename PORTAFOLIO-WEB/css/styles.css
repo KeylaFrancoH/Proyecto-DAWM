@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-1);
+  align-items: center;
 }
 
 .wrapper{
@@ -44,7 +45,7 @@ body {
 }
 
 .logotipo {
-  height: 4.7rem;
+  height: 4rem;
 }
 
 .logo{
@@ -63,7 +64,7 @@ body {
 
 .nav-bar .l-menu li a {
   color: var(--color-3);
-  font-size: 1.13rem;
+  font-size: 1.5vw;
   font-weight: 500;
   padding: 0rem 1.25rem;
   border-radius: 0.13rem;
@@ -97,27 +98,27 @@ body {
   display: flex;
   justify-content: space-evenly;
   color: var(--color-3);
-  padding-top: 5rem;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
+  align-items: center;
+
 }
 
 .inicio h3 {
   font-size: 1.1vw;
   font-weight: 200;
-  padding-top: 16vw;
 }
 
 .inicio p {
-  font-size: 1.3vw;
+  font-size: 1vw;
   line-height: 1.3rem;
   width: 30rem;
 }
 
 .inicio h1 {
-  font-size: 2.1vw;
+  font-size: 2vw;
   font-weight: 800;
   line-height: 1.2rem;
-  margin: 1.25rem 0rem;
+  padding: 1.25rem 0rem;
 }
 
 .inicio h1 span {
@@ -151,7 +152,7 @@ body {
   border-radius: 1.25rem;
   padding: 0.5rem 2.19rem;
   cursor: pointer;
-  font-size: 1.3vw;
+  font-size: 1vw;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   color: var(--color-3);
@@ -165,10 +166,11 @@ body {
 .foto{
   max-width: 100%;
   height: auto;
+  padding-top: 5rem;
 }
 
 .foto img{ 
-  width: 25vw;
+  width: 15vw;
   height: auto;
   border:0.19rem solid var(--color-1);
   border-radius: 0.25rem;
@@ -178,7 +180,7 @@ body {
 
 /* Inicio sección About me */
 .linea-separador{
-  height: 1rem;
+  height: 1vw;
   width: auto;
   background-color: var(--color-1);
 
@@ -186,16 +188,9 @@ body {
 
 .about{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding-top: 2em;
-}
-
-.about img{
-  width: 25vw;
-  height: auto;
-  box-shadow:  -0.2rem 0.19rem 0.31rem var(--color-1);
-  border-radius: 0.25rem;
 }
 
 .about .foto{
@@ -204,7 +199,7 @@ body {
 }
 
 .about .foto img{ 
-  width: 25vw;
+  width: 15vw;
   height: auto;
   border-radius: 0.25rem;
   box-shadow: 0.19rem 0.19rem 0.31rem var(--color-1);
@@ -232,36 +227,44 @@ body {
   padding-top: 1em;
   color: var(--color-3);
   padding: 0.5rem 0;
-  font-size: 1.3vw;
+  font-size: 1vw;
   justify-content: space-between;
 }
 .info-about p{
-  font-size: 1.3vw;
+  font-size: 1vw;
   color: var(--color-3);
+  line-height: 1.3rem;
 }
 .about .info-about .about-content .text .requirement{
-  flex:1 1 20rem;
   color: var(--color-5);
   font-weight: 500;
 }
-.about table, th, td{
-  border: 0.1rem solid var(--color-5);
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: auto;
 }
-.about th,td{
+.th, td{
+  border: thin solid var(--color-5);
+  padding: 0.5vw;
+  background-color: transparent;
   text-align: center;
+  font-size: 1vw;
   font-weight: 400;
   color: var(--color-3);
 }
+
 th {
+  font-size: 1vw;
+  text-align: center;
   background-color: var(--color-5);
   font-weight: bolder;
 }
-.tabla{
-  width: 100%;
+tr:hover {
+  background-color: gray !important;
 }
-
 .b2{
-  margin-top: 8vh;
+  margin-top: 3rem;
 }
 /* fin sección About me */
 /* Inicio sección SKILLS */
@@ -283,20 +286,18 @@ th {
 }
 .skills .row-2{
   display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
   align-items: center;
   padding-bottom: 2rem;
 }
 
 .skills .row-2 .habilidades{
-  flex:1 1 40rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  flex:auto;
 }
 
 .skills .row-2 .habilidades .progress{
-  padding:1rem 0;
+  padding:0.5rem 0;
 }
 
 .skills .row-2 .habilidades .progress h3{
@@ -341,6 +342,7 @@ th {
 .skills .row-2 .habilidades .progress:nth-child(5) .bar span{
   width:95%;
 }
+/* FIN  skills, inicio arte */
 .arte .n-seccion{
   padding-left: 5rem;
 }
@@ -351,16 +353,16 @@ th {
 .arte .row-3 .box-container{
   display: flex;
   height: auto;
-  width: 90vw;
-  gap:1.5rem;
-  padding-left: 5rem;
+  width: 100%;
+  align-items: center;
+  row-gap: 2.5rem;
+  justify-content: space-evenly;
   padding-bottom: 2rem;
 }
 
 .arte .row-3 .box-container .box{
-  flex:1 1 15rem;
   background-color: var(--color-3);
-  padding:2rem;
+  padding:2vw;
   border-radius: .5rem;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -375,7 +377,8 @@ th {
   font-size: 1.3vw;
   padding-top: .5rem;
 }
-
+/* Inicio Sección Skills*/
+/* Inicio Sección servicios */
 .servicios{
   padding-top: 2em;
 }
@@ -388,44 +391,46 @@ th {
 }
 
 .servicios .box-container{
-    display: flex;
-    height: auto;
-    width: 90vw;
-    gap:1.5rem;
-    padding-left: 5rem;
-    padding-bottom: 2rem;
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-bottom: 2rem;
 }
 
 .servicios .box-container .box{
-    flex:1 1 30rem;
-    text-align: center;
-    padding:2rem;
-    background:var(--color-3);
-    border-radius: .5rem;
-    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  text-align: center;
+  padding:3vw;
+  background:var(--color-3);
+  border-radius: .5rem;
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 .servicios .box-container .box i{
-    height:6rem;
-    width:6rem;
-    line-height: 6rem;
-    font-size: 2.5rem;
-    color:var(--color-5);
-    border-radius: 50%;
+  height:5vw;
+  width:5vw;
+  line-height: 5vw;
+  font-size: 2.5vw;
+  color:var(--color-5);
+  border-radius: 50%;
 }
 
 .servicios .box-container .box h3{
-    color:black;
-    font-size: 1.3vw;
-    padding-top: 1rem;
+  color:black;
+  font-size: 1.3vw;
+  padding-top: 1rem;
 }
 
 .servicios .box-container .box p{
-    color:#666;
-    font-size: 1.3vw;
-    padding-top: .5rem;
+  color:#666;
+  font-size: 1vw;
+  padding-top: .5rem;
+  line-height: 1.3rem;
+   width: 10rem;
 }
-
+/* Fin seccion servicios*/
+/* Inicio Sección Portfolio */
 .portafolio{
   margin-top: 2em;
 }
@@ -440,16 +445,15 @@ th {
 .portafolio .box-container{
   display: flex;
   height: auto;
-  width: 100vw;
+  width: 100%;
   gap:1.5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  align-items: center;
   padding-bottom: 5rem;
 }
 
 .portafolio .box-container .box{
-  flex:1 1 30rem;
-  height:25rem;
+  flex:1 1 0;
+  height:30vw;
   position: relative;
   overflow:hidden;
   border:1rem solid var(--color-3);
@@ -476,44 +480,51 @@ th {
 .portafolio .box-container .box h3{
   bottom:.5rem; 
   left:1rem;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   font-weight: 900;
   color:var(--color-4);
   text-align: center;
   text-decoration: underline;
 }
 .portafolio .box-container .box h4{
-  bottom:.5rem; left:1rem;
+  bottom:.5rem; 
+  left:1rem;
   font-size: 1.1vw;
   font-weight: bold;
   color:var(--color-2);
   text-align: center;
 }
 .portafolio .box-container .box p{
-  bottom:.5rem; left:1rem;
-  font-size: 1.1vw;
+  bottom:.5rem; 
+  left:1rem;
+  font-size: 1vw;
   color:var(--color-2);
   text-align: center;
 }
 
 .portafolio .box-container .box .icons{
   position: absolute;
-  top:1rem; right:1rem;
+  top: 0.5rem; 
+  right:1rem;
 }
 
 .portafolio .box-container .box .icons a{
   display: block;
-  height:4rem;
-  width:4rem;
+  height:5vw;
+  width:5vw;
   border-radius: .5rem;
   background: var(--color-3);
   color:var(--color-5);
-  font-size: 1.7rem;
-  line-height: 4rem;
+  font-size: 2vw;
+  line-height: 5vw;
   text-align: center;
   margin-bottom: 1rem;
 }
 
+#hamburguesa{
+  right: 0.3rem;
+  top: 0.1rem
+}
 .portafolio .box-container .box .icons a:hover{
   background:var(--color-3);
   color:var(--color-2);
@@ -555,14 +566,22 @@ th {
 
 .art{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
   align-items: center;
   justify-items: center;
 }
-
+.art .foto img{
+  width: 28vw;
+}
 .art img:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.art video{
+  width:25vw ;
+  height:20vw;
+  object-fit: cover;
 }
 .art video:hover {
   transform: scale(1.1);
@@ -591,7 +610,7 @@ th {
 }
 
 .contact .iconos-container .iconos{
-  flex:1 1 25rem;
+  flex:1 1 0;
   text-align: center;
   padding:2rem;
   background:var(--color-3);
@@ -600,9 +619,9 @@ th {
 }
 
 .contact .iconos-container .iconos i{
-  height:2.5rem;
-  width:2.5rem;
-  line-height: 2.5rem;
+  height:3vw;
+  width:3vw;
+  line-height: 3vw;
   font-size: 1rem;
   background: var(--color-5);
   color:var(--color-3);
@@ -611,7 +630,7 @@ th {
 
 .contact .iconos-container .iconos h3{
   color:#111;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   font-weight: bolder;
   padding:.5rem 0;
   padding-top: 1rem;
@@ -619,11 +638,11 @@ th {
 
 .contact .iconos-container .iconos p{
   color:#666;
-  font-size: 1.1vw;
+  font-size: 1vw;
 }
 
 .contact .formulario{
-  display: flex;
+  display: grid;
   gap: 1.5rem;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -637,24 +656,40 @@ th {
   border-radius: .5rem;
 }
 
-.contact .boton:hover{
+.contact .formulario .boton:hover{
   color: var(--color-2);
   font-weight: 900;
 }
 
 .contact .formulario .map{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   width: 100%;
 }
 
+input[type="submit"] {
+  max-width: 10rem;
+  background-color: var(--color-4);
+  color: white;
+  border: thin solid var(--color-2);
+  min-width: 2rem;
+  min-height: 2rem;
+  cursor: pointer;
+  padding: 0 2rem 0 2rem;
+}
+.map {
+  width: auto;
+  border-radius: 1rem;
+  height: 55vh;
+  box-shadow: 5px 5px 30px 0px rgb(214, 214, 214);
+}
 .contact .formulario form .box,
 .contact .formulario form textarea{
   width: 100%;
   border-radius: 0.5rem;
   border-bottom: .1rem solid #333;
   color:#333;
-  text-transform: none;
+  text-transform: uppercase;
   font-size: 1.1vw;
   padding:1rem 0;
   margin:1rem 0;

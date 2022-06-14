@@ -52,7 +52,94 @@
     }  
     .about .info-about .about-content{
       padding: 0.5rem 0;
-      font-size: 2vw;
+      font-size: 3vw;
+    }
+    .progress i{
+      font-size: 1.5vw;
+    }
+    .skills .row-2{
+      display: flex;
+      align-items: center;
+      padding-bottom: .7rem;
     }
     
+    .skills .row-2 .habilidades{
+      flex:1 1 40rem;
+    }
+    
+    .skills .row-2 .habilidades .progress{
+      padding:.8rem 0;
+    }
+    
+    .skills .row-2 .habilidades .progress h3{
+      padding:.5rem 0;
+      font-size: 1.3vw;
+    }
+    
+    .skills .row-2 .habilidades .progress .bar{
+      height:2vw;
+    }
+    
+    .skills .row-2 .habilidades .progress .bar span{
+      height:2vw;
+    }
+
+    .arte .row-3{
+      padding-bottom: 2rem;
+    }
+    
+    .arte .row-3 .box-container{
+      flex-direction: column;
+      height: 20vw;
+      width: 80vw;
+    }
+    
+    .arte .row-3 .box-container .box{
+      height: 20vw;
+      padding:2rem;
+    }
+    
+    .arte .row-3 .box-container .box h3{
+      font-size: 1.1vw;
+    }
+    
+    .arte .row-3 .box-container .box p{
+      font-size: 1.1vw;
+      padding-top: .5rem;
+    }
+    
+    .servicios .box{
+      padding: 0%;
+    }
+    .servicios .box-container{
+        flex-direction: column;
+        height: auto;
+        width: 80vw;
+    }
+    .servicios .box-container .box{
+        height: 20vw;
+        padding:2rem;
+    }
+    
+    .servicios .box-container .box i{
+        height:3rem;
+        width:3rem;
+        line-height: 0.2rem;
+        font-size: 4vw;
+    }
+    
+    .servicios .box-container .box h3{
+        color:black;
+        font-size: 1.3vw;
+        left:3rem;
+    }
+    
+    .servicios .box-container .box p{
+        color:#666;
+        font-size: 1.3vw;
+        padding-top: .5rem;
+    }
+    .portafolio .box-container{
+      flex-direction: column;
+    }
   }
