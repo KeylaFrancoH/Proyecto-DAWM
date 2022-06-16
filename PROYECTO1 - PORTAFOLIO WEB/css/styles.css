@@ -62,10 +62,11 @@ body {
 }
 
 .nav-bar .l-menu li a {
+  width: 100%;
   color: var(--color-3);
   font-size: 1.2vw;
   font-weight: 500;
-  padding: 0rem 1.25rem;
+  padding: 1.2rem;
   border-radius: 0.13rem;
 }
 
@@ -550,7 +551,7 @@ tr:hover {
 }
 
 #hamburguesa {
-  right: 0.3rem;
+  right: 0.08rem;
   top: 0.1rem
 }
 
