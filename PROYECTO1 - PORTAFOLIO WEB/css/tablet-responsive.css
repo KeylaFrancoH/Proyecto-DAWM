@@ -25,7 +25,7 @@
   }
 
   .nav-bar .l-menu li a {
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
     padding: 2vw 3vw 2vw 3vw;
   }
@@ -35,18 +35,30 @@
     left: 0;
   }
 
-  .inicio h3 {
-    padding-top: 0;
+  .inicio{
+    padding: 2rem;
   }
   
-  .foto img {
-    width: 13vw;
+  .inicio h3, .inicio p, .about .info-about p,
+  .about .info-about .about-content, th, td, .about .info-about .about-content .text .requirement,
+  .arte .row-3 .box-container .box h3, .arte .row-3 .box-container .box p,
+  .servicios .box-container .box h3 , .servicios .box-container .box span, .portafolio .box-container .box h3,
+  .portafolio .box-container .box p, .ima-galeria .parrafo , .ima-galeria .descripcion, .ima-galeria h2,
+  .contact .iconos-container .iconos h3, .contact .iconos-container .iconos p {
+    font-size: 1.6vw;
+  }
+
+  .inicio h1, .social a, .n-seccion{
+    font-size: 2.3vw;
+  }
+  
+  .foto img{
+    width: 13.5vw;
   }
   
   .boton {
-    border: 0.1rem solid var(--color-4);
-    border-radius: 0.75rem;
-    padding: 0.12rem 1rem;
+    font-size: 1.6vw;
+    padding: 0.5rem 1rem;
   }
 
   .linea-separador {
@@ -55,11 +67,43 @@
 
   .separador {
     height: 0.15rem;
-    width: 6rem;
-    margin-top: 0.4rem;
-    margin-bottom: 1em;
   }
   
+  .about .foto img{
+    width: 18vw;
+  }
+
+  .progress i, .portafolio .box-container .box h4{
+    font-size: 1.5vw;
+  }
+
+  .progress span{
+    font-size: 2vw;
+  }
+
+  .servicios .box-container .box i {
+    height: 7vw;
+    width: 7vw;
+    line-height: 7vw;
+    font-size: 3vw;
+  }
+
+  .portafolio .box-container{
+    display: grid;
+    justify-content: center;
+  }
+  
+  .art .foto img, .art video{
+    width: 34vw;
+  }
+  
+  .contact .iconos-container .iconos i{
+    height: 4vw;
+    width: 4vw;
+    line-height: 4vw;
+    font-size: 2vw;
+  }
+
 }
 
 @media screen and (max-width: 755px) and (orientation: landscape) {

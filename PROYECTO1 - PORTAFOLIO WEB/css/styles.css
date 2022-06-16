@@ -252,7 +252,7 @@ table {
   width: auto;
 }
 
-.th,
+th,
 td {
   border: thin solid var(--color-5);
   padding: 0.5vw;
@@ -579,7 +579,7 @@ tr:hover {
 
 .ima-galeria h2 {
   font-size: 1.1vw;
-  font-weight: 400;
+  font-weight: bolder;
   color: var(--color-4);
 }
 
@@ -590,7 +590,6 @@ tr:hover {
 
 .ima-galeria .descripcion {
   font-size: 1.1vw;
-  font-weight: bold;
   color: var(--color-3);
   padding-bottom: 30px;
 }
@@ -679,9 +678,7 @@ tr:hover {
 .contact .formulario {
   display: grid;
   gap: 1.5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 2em;
+  padding: 0 5rem 2rem 5rem;
 }
 
 .contact .formulario form {

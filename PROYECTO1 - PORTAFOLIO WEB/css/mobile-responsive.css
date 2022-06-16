@@ -1,3 +1,22 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
+  .inicio{
+    flex-direction: column;
+    padding: 3em;
+  }
+
+  .inicio h3, .inicio p, .inicio h1, .inicio h1 span, .b{
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
   
+  .foto{
+    padding-top: 2.5rem;
+  }
+
+  .foto img{
+    width: 13vw;
+  }
 }
