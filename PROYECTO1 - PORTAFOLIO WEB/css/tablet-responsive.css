@@ -44,7 +44,7 @@
   .arte .row-3 .box-container .box h3, .arte .row-3 .box-container .box p,
   .servicios .box-container .box h3 , .servicios .box-container .box span, .portafolio .box-container .box h3,
   .portafolio .box-container .box p, .ima-galeria .parrafo , .ima-galeria .descripcion, .ima-galeria h2,
-  .contact .iconos-container .iconos h3, .contact .iconos-container .iconos p {
+  .contact .iconos-container .iconos h3, .contact .iconos-container .iconos p, footer {
     font-size: 1.6vw;
   }
 

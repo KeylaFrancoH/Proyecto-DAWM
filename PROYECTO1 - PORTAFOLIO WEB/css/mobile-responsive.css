@@ -1,22 +1,96 @@
 @media screen and (max-width: 550px) {
-  .inicio{
+  .inicio {
     flex-direction: column;
-    padding: 3em;
+    padding: 3rem;
   }
 
-  .inicio h3, .inicio p, .inicio h1, .inicio h1 span, .b{
+  .inicio h3 {
+    text-align: center;
+    font-size: 4vw;
+    padding-top: 5rem;
+  }
+
+  .inicio p {
+    text-align: center;
+    width: auto;
+  }
+
+  .inicio h1,
+  .inicio h1 span,
+  .b {
     text-align: center;
   }
 
-  .social {
+  .social,
+  table {
     justify-content: center;
   }
-  
-  .foto{
+
+  .foto {
     padding-top: 2.5rem;
   }
 
-  .foto img{
-    width: 13vw;
+  .separador {
+    width: 8rem;
+    margin-bottom: 2rem;
   }
+
+  .about {
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+  }
+
+  .about .info-about .about-content {
+    padding-bottom: 2rem;
+    gap: 3vw;
+  }
+
+  .info-about,
+  .skills,
+  .servicios,
+  .portafolio,
+  .galeria,
+  .contact {
+    padding: 1.2rem 0 1.2rem 0;
+  }
+
+  .tab {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about .foto {
+    padding-top: 2vw;
+  }
+
+  .b2 {
+    text-align: center;
+    margin-top: 4vw;
+  }
+
+  .servicios .box-container, .arte .row-3 .box-container, .contact .iconos-container {
+    display: grid;
+    justify-content: center;
+  }
+  .servicios .box-container .box, .arte .row-3 .box-container .box{
+    width: 55vw;
+  }
+
+  .art {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .art .foto img,
+  .art video {
+    width: 54vw;
+  }
+
+  .contact .formulario form {
+    padding: 3rem;
+    min-width: 0;
+    max-width: 100vw;
+    padding-top: 3rem;
+  }
+
+  
 }
