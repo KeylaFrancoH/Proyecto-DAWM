@@ -1,0 +1,39 @@
+@media screen and (max-width: 3840px) and (min-width: 1850px) {
+  .nav-bar {
+    height: 10em;
+  }
+
+  .logo img {
+    height: 10rem;
+  }
+
+  .inicio h3,
+  .inicio h1 {
+    padding-bottom: 3rem;
+  }
+
+  .inicio p {
+    line-height: 5rem;
+    width: 80rem;
+  }
+
+  .info-about {
+    padding-left: 8rem;
+  }
+
+  .info-about p {
+    line-height: 5rem;
+  }
+
+  .separador {
+    width: 30rem;
+  }
+
+  input[type="submit"] {
+    max-width: 30rem;
+  }
+
+  .map {
+    height: 45vh;
+  }
+}

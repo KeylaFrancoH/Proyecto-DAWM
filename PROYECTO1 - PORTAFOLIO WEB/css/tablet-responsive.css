@@ -35,27 +35,42 @@
     left: 0;
   }
 
-  .inicio{
+  .inicio {
     padding: 2rem;
   }
-  
-  .inicio h3, .inicio p, .about .info-about p,
-  .about .info-about .about-content, th, td, .about .info-about .about-content .text .requirement,
-  .arte .row-3 .box-container .box h3, .arte .row-3 .box-container .box p,
-  .servicios .box-container .box h3 , .servicios .box-container .box span, .portafolio .box-container .box h3,
-  .portafolio .box-container .box p, .ima-galeria .parrafo , .ima-galeria .descripcion, .ima-galeria h2,
-  .contact .iconos-container .iconos h3, .contact .iconos-container .iconos p, footer {
+
+  .inicio h3,
+  .inicio p,
+  .about .info-about p,
+  .about .info-about .about-content,
+  th,
+  td,
+  .about .info-about .about-content .text .requirement,
+  .arte .row-3 .box-container .box h3,
+  .arte .row-3 .box-container .box p,
+  .servicios .box-container .box h3,
+  .servicios .box-container .box span,
+  .portafolio .box-container .box h3,
+  .portafolio .box-container .box p,
+  .ima-galeria .parrafo,
+  .ima-galeria .descripcion,
+  .ima-galeria h2,
+  .contact .iconos-container .iconos h3,
+  .contact .iconos-container .iconos p,
+  footer {
     font-size: 1.6vw;
   }
 
-  .inicio h1, .social a, .n-seccion{
+  .inicio h1,
+  .social a,
+  .n-seccion {
     font-size: 2.3vw;
   }
-  
-  .foto img{
+
+  .foto img {
     width: 13.5vw;
   }
-  
+
   .boton {
     font-size: 1.6vw;
     padding: 0.5rem 1rem;
@@ -68,16 +83,17 @@
   .separador {
     height: 0.15rem;
   }
-  
-  .about .foto img{
+
+  .about .foto img {
     width: 18vw;
   }
 
-  .progress i, .portafolio .box-container .box h4{
+  .progress i,
+  .portafolio .box-container .box h4 {
     font-size: 1.5vw;
   }
 
-  .progress span{
+  .progress span {
     font-size: 2vw;
   }
 
@@ -88,16 +104,17 @@
     font-size: 3vw;
   }
 
-  .portafolio .box-container{
+  .portafolio .box-container {
     display: grid;
     justify-content: center;
   }
-  
-  .art .foto img, .art video{
+
+  .art .foto img,
+  .art video {
     width: 34vw;
   }
-  
-  .contact .iconos-container .iconos i{
+
+  .contact .iconos-container .iconos i {
     height: 4vw;
     width: 4vw;
     line-height: 4vw;

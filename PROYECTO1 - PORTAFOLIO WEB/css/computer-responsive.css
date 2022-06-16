@@ -1,8 +1,11 @@
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1030px) {
   html {
     font-size: 70%;
   }
-
+  .foto img{
+    width: 14vw;
+  }
+  
   .contact .formulario .map {
     height: 40vw;
   }

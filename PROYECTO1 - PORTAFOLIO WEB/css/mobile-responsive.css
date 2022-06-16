@@ -1,4 +1,4 @@
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 450px) {
   .inicio {
     flex-direction: column;
     padding: 3rem;
@@ -68,12 +68,39 @@
     margin-top: 4vw;
   }
 
-  .servicios .box-container, .arte .row-3 .box-container, .contact .iconos-container {
+  .servicios .box-container,
+  .arte .row-3 .box-container,
+  .contact .iconos-container {
     display: grid;
     justify-content: center;
   }
-  .servicios .box-container .box, .arte .row-3 .box-container .box{
+
+  .skills .n-seccion,
+  .arte .n-seccion,
+  .servicios .n-seccion,
+  .portafolio .n-seccion,
+  .galeria .n-seccion,
+  .contact .n-seccion {
+    padding-left: 1.8rem;
+  }
+  .servicios .box-container .box,
+  .arte .row-3 .box-container .box {
     width: 55vw;
+  }
+
+  .contact .iconos-container .iconos i {
+    height: 2vw;
+    width: 2vw;
+    line-height: 2vw;
+    font-size: 1vw;
+  }
+
+  .portafolio .box-container .box .icons a {
+    height: 4vw;
+    width: 4vw;
+    line-height: 4vw;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
   .art {
@@ -92,5 +119,71 @@
     padding-top: 3rem;
   }
 
-  
+
+}
+
+@media screen and (max-width: 150px) {
+  .contact .formulario form {
+    padding: 0;
+  }
+
+  .separador {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 1rem;
+    max-width: 1%;
+    height: auto;
+  }
+
+  .logo img {
+    height: 2rem;
+  }
+
+  .material-symbols-outlined {
+    font-size: 0.13rem;
+  }
+
+  .skills .n-seccion,
+  .arte .n-seccion,
+  .servicios .n-seccion,
+  .portafolio .n-seccion,
+  .galeria .n-seccion,
+  .contact .n-seccion {
+    padding-left: 0%;
+  }
+
+  .about,
+  .arte .row-3 .box-container,
+  .servicios .box-container,
+  .portafolio .box-container,
+  .contact .formulario,
+  .contact .iconos-container,
+  .skills .row-2 .habilidades {
+    padding: 0 0 0 0;
+    padding-bottom: 1rem;
+  }
+
+  .skills .row-2 .habilidades .progress h3 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .7rem 0;
+    font-size: 1.3vw;
+    color: var(--color-4);
+    font-weight: 400;
+  }
+
+  .skills .row-2 .habilidades .progress .bar {
+    height: 0.3rem;
+    width: 50%;
+  }
+
+  .galeria .foto {
+    padding: 0;
+    width: 40vw
+  }
+
+
+
 }
