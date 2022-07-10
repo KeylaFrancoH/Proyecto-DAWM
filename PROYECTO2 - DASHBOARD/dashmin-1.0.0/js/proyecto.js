@@ -1,13 +1,16 @@
 
 var contenido = document.querySelector('#contenido')
+var selecc = document.getElementById('select-primary')
 let URL = 'https://ghibliapi.herokuapp.com/films/'
 
 
-    fetch(URL)
-        .then(respuesta => respuesta.json())
-        .then(datos => {
-            mostrarDatos(datos);
-        })
+fetch(URL)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        mostrarDatos(datos);
+        seleccionar_film(datos);
+    })
+    .catch(console.error);
 
 
 function mostrarDatos(datos) {
@@ -15,6 +18,7 @@ function mostrarDatos(datos) {
             for (var i = 0; i < datos.length; i++) {      
                body+=`<tr>
                <th scope="col"><input class="form-check-input" type="checkbox"></th>
+               <th scope ="col">${datos[i].release_date}</th>
                <th scope="col">${datos[i].title}</th>
                <th scope="col">${datos[i].original_title}</th>
                <th scope="col">${datos[i].producer}</th>
@@ -22,6 +26,13 @@ function mostrarDatos(datos) {
                <th scope="col">${datos[i].rt_score}</th>
            </tr>`
             }
-            document.getElementById('contenido').innerHTML = body
+            contenido.innerHTML = body
 }
 
+function seleccionar_film(datos){
+    let titulos = "<option selected>Seleccione el nombre de una película</option>"
+      for (valor of datos) {
+            titulos+=` <option value="">${valor['title']}</option> `
+      }
+      selecc.innerHTML = titulos
+}
