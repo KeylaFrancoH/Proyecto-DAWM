@@ -105,9 +105,6 @@
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" type="search" placeholder="Search">
-                </form>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -232,14 +229,13 @@
                         </div>
                     </div>
                 </div>
-                <img src="img/totoro.png" class="rounded mx-auto d-block" alt="TOTORO IMG">
             </div>
             <!-- select End -->
             <div class="select">
 
                 <label for="select-primary" class="select-p">DESCRIPCIÓN DE LAS PELÍCULAS</label>
                 <div class="input-group">
-                    <select name= "select" class="form-select" aria-label="Default select example" id="select-primary" onclick="seleccionar_film()">
+                    <select class="form-select" id="select-primary" onclick="seleccionar_film(datos)">
                         <option selected>Seleccione el nombre de una película</option>
                         <option value=""></option>
                     </select>
@@ -249,9 +245,9 @@
                     <div class="card" id="descripción">
                         <div class="card-body" id="bodycard">
                             <h6>DESCRIPCIÓN</h6>
-                            <p>TEXTO Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis iusto animi,
-                                in sed illum iure iste consectetur maxime maiores rerum molestiae recusandae laudantium
-                                aut praesentium voluptatem nulla veritatis eveniet id!</p>
+                            <p>El Studio Ghibli (スタジオジブリ Sutajio Jiburi?) es un estudio de animación japonés, con sede
+                                en Tokio. Fue fundada en 1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy, han
+                                realizado más de 20 películas, además de otras clases de trabajos. </p>
                         </div>
                     </div>
                 </div>
@@ -262,10 +258,13 @@
                 <div class="bg-light text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">DATOS DE LAS PELÍCULAS DEL ESTUDIO GHIBLI</h6>
+                        <form class="d-none d-md-flex ms-4">
+                            <input class="form-control border-0" type="search" placeholder="Buscar por título" id="buscar">
+                        </form>
                         <a href="">Mostrar todos</a>
                     </div>
                     <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0" id="tabla">
                             <thead>
                                 <tr class="text-dark">
                                     <th scope="col"></th>
