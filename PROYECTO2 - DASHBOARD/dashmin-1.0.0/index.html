@@ -30,6 +30,8 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/myStyles.css">
+
+
 </head>
 
 <body>
@@ -231,23 +233,23 @@
                 </div>
             </div>
             <!-- select End -->
-            <div class="select">
+            <div class="selected">
 
                 <label for="select-primary" class="select-p">DESCRIPCIÓN DE LAS PELÍCULAS</label>
                 <div class="input-group">
-                    <select class="form-select" id="select-primary" onclick="seleccionar_film(datos)">
-                        <option selected>Seleccione el nombre de una película</option>
+                    <select name= "select" class="form-select" id="select-primary" >
+                        <option  selected>Seleccione el nombre de una película</option>
                         <option value=""></option>
                     </select>
                 </div>
                 <div class="contenido-mul" id="movies">
                     <img src="img/totoro.png" alt="imagen de prueba" width="200px" id="portada">
                     <div class="card" id="descripción">
+                        <h6 class="t-des">DESCRIPCIÓN</h6>
                         <div class="card-body" id="bodycard">
-                            <h6>DESCRIPCIÓN</h6>
                             <p>El Studio Ghibli (スタジオジブリ Sutajio Jiburi?) es un estudio de animación japonés, con sede
                                 en Tokio. Fue fundada en 1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy, han
-                                realizado más de 20 películas, además de otras clases de trabajos. </p>
+                                realizado más de 20 películas, además de otras clases de trabajos.</p>
                         </div>
                     </div>
                 </div>
@@ -288,28 +290,8 @@
 
 
             <!-- Sales Chart Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Worldwide Sales</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="worldwide-sales"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Salse & Revenue</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="salse-revenue"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <canvas id="myChart" width="200" height="200"></canvas>
+            <button type="button" class="btn btn-info" onclick="fetchData()">Información</button>
             <!-- Sales Chart End -->
 
             <!-- Widgets Start -->
@@ -474,6 +456,7 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

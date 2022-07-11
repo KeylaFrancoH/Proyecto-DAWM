@@ -1,5 +1,5 @@
 
-.select{
+.selected{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -17,7 +17,9 @@
     display: flex;
     justify-content: space-around;
 }
-
+.t-des{
+    margin: 1em;
+}
 #bodycard{
     color: black;
 }
