@@ -81,8 +81,6 @@ selecc.addEventListener('change', (event) => {
             foto.src = urls[index-1]
             foto.alt = alt[index-1]
             selector.textContent = description[index-1]
-            console.log(alt[index-1])
-            console.log(description[index-1])
         } 
     }
     
