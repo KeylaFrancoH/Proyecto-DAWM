@@ -4,7 +4,9 @@ var selecc = document.getElementById('select-primary');
 var foto = document.getElementById('portada');
 var selector = document.querySelector('#bodycard');
 var busqueda = document.getElementById('buscar');
+var alt =[]
 var urls = [];
+var description = [];
 var table = document.getElementById("tabla").tBodies[0];
 
 
@@ -58,28 +60,32 @@ buscaTabla = function () {
 busqueda.addEventListener('keyup', buscaTabla);
 
 function seleccionar_film(datos) {
-    let titulos = "<option value='El Studio Ghibli (スタジオジブリ Sutajio Jiburi?) es un estudio de animación japonés, con sede en Tokio. Fue fundada en 1985 por Hayao Miyazaki y Isao Takahata, y a día de hoy, han realizado más de 20 películas, además de otras clases de trabajos.' selected>Seleccione el nombre de una película</option>"
+    let titulos = "<option value='' selected>Seleccione el nombre de una película</option>"
+    var cont = 0;
     for (valor of datos) {
         urls.push(valor['image']);
-        titulos += ` <option value="${valor['description']}">${valor['title']}</option>
+        alt.push(valor['title'])
+        description.push(valor['description'])
+        titulos += ` 
+        <option value="${cont}">${valor['title']}</option>
         `
+        cont++;
     }
     selecc.innerHTML = titulos
-
-
-
 }
 
+
 selecc.addEventListener('change', (event) => {
-    selector.textContent = ` ${event.target.value}`;
     for (let index = 0; index < urls.length; index++) {
-        foto.src = $("event.target").attr("src",urls[index])
-
+        if(selecc.selectedIndex == index){
+            foto.src = urls[index-1]
+            foto.alt = alt[index-1]
+            selector.textContent = description[index-1]
+            console.log(alt[index-1])
+            console.log(description[index-1])
+        } 
     }
-
     
-   
-
 });
 
 
