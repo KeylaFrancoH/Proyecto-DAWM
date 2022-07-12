@@ -7,6 +7,7 @@ var busqueda = document.getElementById('buscar');
 var alt =[]
 var urls = [];
 var description = [];
+var scores = [];
 var table = document.getElementById("tabla").tBodies[0];
 
 
@@ -66,6 +67,7 @@ function seleccionar_film(datos) {
         urls.push(valor['image']);
         alt.push(valor['title'])
         description.push(valor['description'])
+        scores.push(valor['rt_score'])
         titulos += ` 
         <option value="${cont}">${valor['title']}</option>
         `
@@ -87,18 +89,16 @@ selecc.addEventListener('change', (event) => {
 });
 
 
-
-
-
+console.log(scores)
 
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: alt,
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'score de las películas',
+            data: scores,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -126,4 +126,3 @@ const myChart = new Chart(ctx, {
         }
     }
 });
-

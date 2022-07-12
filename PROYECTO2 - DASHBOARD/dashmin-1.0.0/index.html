@@ -26,6 +26,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -287,11 +288,12 @@
             </div>
             <!-- Recent Sales End -->
 
-
-
             <!-- Sales Chart Start -->
-            <canvas id="myChart" width="200" height="200"></canvas>
-            <button type="button" class="btn btn-info" onclick="fetchData()">Información</button>
+            <div class="container-fluid pt-4 px-4" id="grafico">
+                <div class="row g-4">
+                    <canvas id="myChart" width="200" height="200"></canvas>
+                </div>
+            </div>
             <!-- Sales Chart End -->
 
             <!-- Widgets Start -->
