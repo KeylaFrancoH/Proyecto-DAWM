@@ -7,7 +7,7 @@
     margin: 2em;
 }
 
-.select-p{
+.select-p, .select-d{
     color: black;
     font-weight: bolder;
     font-size: 1rem;
@@ -24,7 +24,14 @@
 #bodycard{
     color: black;
 }
-
+.datos{
+    display: flex;
+    margin: 2em;
+    gap: 1rem;
+}
+#myChart{
+    margin: 2em;
+}
 @media (min-width: 576px) {
     .select-p{
         font-size: 0.8rem;
@@ -47,7 +54,7 @@
 }
 
 @media (max-width: 575.98px) {
-    .contenido-mul{
+    .contenido-mul, .datos{
         flex-direction: column;
         align-items: center;
         gap: 1rem;

@@ -5,10 +5,11 @@ var foto = document.getElementById('portada');
 var selector = document.querySelector('#bodycard');
 var busqueda = document.getElementById('buscar');
 const ctx = document.getElementById('myChart').getContext('2d');
-var alt =[]
+var nombres =[]
 var urls = [];
 var description = [];
 var scores = [];
+var duracion =[];
 var table = document.getElementById("tabla").tBodies[0];
 
 
@@ -17,12 +18,13 @@ fetch(URL)
     .then(respuesta => respuesta.json())
     .then(datos => {
         seleccionar_film(datos);
+        cargar_listas(datos);
     })
     .catch(console.error);
 
 window.addEventListener('DOMContentLoaded', (event) => {
     mostrarDatos();
-    chart_info();
+    //chart_info();
 });
 
 
@@ -66,10 +68,6 @@ function seleccionar_film(datos) {
     let titulos = "<option value='' selected>Seleccione el nombre de una película</option>"
     var cont = 0;
     for (valor of datos) {
-        urls.push(valor['image']);
-        alt.push(valor['title'])
-        description.push(valor['description'])
-        scores.push(valor['rt_score'])
         titulos += ` 
         <option value="${cont}">${valor['title']}</option>
         `
@@ -83,22 +81,31 @@ selecc.addEventListener('change', (event) => {
     for (let index = 0; index < urls.length; index++) {
         if(selecc.selectedIndex == index){
             foto.src = urls[index-1]
-            foto.alt = alt[index-1]
+            foto.alt = nombres[index-1]
             selector.textContent = description[index-1]
         } 
     }
     
 });
 
+function cargar_listas(datos){
+    for(valor of datos){
+        urls.push(valor['image']);
+        nombres.push(valor['title'])
+        description.push(valor['description'])
+        scores.push(valor['rt_score'])
+        duracion.push(valor['running_time'])
+    }
+}
 
 function chart_info(){
     const myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: alt,
+            labels: nombres.slice(0, 10),
             datasets: [{
                 label: 'score de las películas',
-                data: scores,
+                data: scores.slice(0, 10),
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -127,4 +134,3 @@ function chart_info(){
         }
     });
 }
-

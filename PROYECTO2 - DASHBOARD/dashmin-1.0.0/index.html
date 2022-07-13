@@ -287,13 +287,38 @@
                 </div>
             </div>
             <!-- Recent Sales End -->
+            
+            <!-- SELECT GRAFICO-->
+            <div class="selected">
+                <label for="select-primary" class="select-d">DURACIÓN DE PELÍCULAS</label>
+                <div class="input-group">
+                    <select name= "select" class="form-select" id="select-duration" >
+                        <option  selected>Seleccione el nombre de una película</option>
+                        <option value="1">DOS PELÍCULAS</option>
+                        <option value="2">CINCO PELÍCULAS</option>
+                        <option value="3">DIEZ PELÍCULAS</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!--FIN SELECT GRAFICO-->
+
 
             <!-- Sales Chart Start -->
             <div class="container-fluid pt-4 px-4" id="grafico">
                 <div class="row g-4">
                     <canvas id="myChart" width="200" height="200"></canvas>
-                    <button type="button" class="btn btn-primary" onclick="chart_info()">Obtener isnformación</button>
+                    
                 </div>
+                <div class="datos">
+                    <button type="button" class="btn btn-primary" id="btn-info" onclick="chart_info()">OBTENER DATOS</button>
+                    <div class="card">
+                        <div class="card-body">
+                          NOTA: AL PRESIONAR EL BOTÓN OBTENER DATOS SE MOSTRARÁ UNA GRÁFICA DE LOS DIEZ PELÍCULAS BASADAS EN SU SCORE
+                        </div>
+                      </div>
+                </div>
+                
             </div>
             <!-- Sales Chart End -->
 
