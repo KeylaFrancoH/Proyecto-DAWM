@@ -84,9 +84,12 @@ selecc.addEventListener('change', (event) => {
             foto.src = urls[index - 1]
             foto.alt = nombres[index - 1]
             selector.textContent = description[index - 1]
+        } else if(selecc.selectedIndex == urls.length){
+            foto.src = urls[index]
+            foto.alt = nombres[index]
+            selector.textContent = description[index]
         }
     }
-
 });
 
 function cargar_listas(datos) {
