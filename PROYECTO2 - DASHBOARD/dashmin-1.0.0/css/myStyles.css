@@ -29,7 +29,12 @@
     margin: 2em;
     gap: 1rem;
 }
-#myChart{
+#myChart2, #myChart{
+    margin: 2em;
+}
+
+.graficos{
+    display: flex;
     margin: 2em;
 }
 @media (min-width: 576px) {
@@ -54,7 +59,7 @@
 }
 
 @media (max-width: 575.98px) {
-    .contenido-mul, .datos{
+    .contenido-mul, .datos, .graficos{
         flex-direction: column;
         align-items: center;
         gap: 1rem;

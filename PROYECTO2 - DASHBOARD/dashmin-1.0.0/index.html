@@ -26,7 +26,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
+
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -238,8 +238,8 @@
 
                 <label for="select-primary" class="select-p">DESCRIPCIÓN DE LAS PELÍCULAS</label>
                 <div class="input-group">
-                    <select name= "select" class="form-select" id="select-primary" >
-                        <option  selected>Seleccione el nombre de una película</option>
+                    <select name="select" class="form-select" id="select-primary">
+                        <option selected>Seleccione el nombre de una película</option>
                         <option value=""></option>
                     </select>
                 </div>
@@ -262,7 +262,8 @@
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">DATOS DE LAS PELÍCULAS DEL ESTUDIO GHIBLI</h6>
                         <form class="d-none d-md-flex ms-4">
-                            <input class="form-control border-0" type="search" placeholder="Buscar por título" id="buscar">
+                            <input class="form-control border-0" type="search" placeholder="Buscar por título"
+                                id="buscar">
                         </form>
                         <a href="">Mostrar todos</a>
                     </div>
@@ -287,39 +288,53 @@
                 </div>
             </div>
             <!-- Recent Sales End -->
-            
-            <!-- SELECT GRAFICO-->
-            <div class="selected">
-                <label for="select-primary" class="select-d">DURACIÓN DE PELÍCULAS</label>
-                <div class="input-group">
-                    <select name= "select" class="form-select" id="select-duration" >
-                        <option  selected>Seleccione el nombre de una película</option>
-                        <option value="1">DOS PELÍCULAS</option>
-                        <option value="2">CINCO PELÍCULAS</option>
-                        <option value="3">DIEZ PELÍCULAS</option>
-                    </select>
-                </div>
-            </div>
-            
-            <!--FIN SELECT GRAFICO-->
-
 
             <!-- Sales Chart Start -->
-            <div class="container-fluid pt-4 px-4" id="grafico">
-                <div class="row g-4">
-                    <canvas id="myChart" width="200" height="200"></canvas>
-                    
-                </div>
-                <div class="datos">
-                    <button type="button" class="btn btn-primary" id="btn-info" onclick="chart_info()">OBTENER DATOS</button>
-                    <div class="card">
-                        <div class="card-body">
-                          NOTA: AL PRESIONAR EL BOTÓN OBTENER DATOS SE MOSTRARÁ UNA GRÁFICA DE LOS DIEZ PELÍCULAS BASADAS EN SU SCORE
+            <div class="graficos">
+
+                <div class="container-fluid pt-4 px-4" id="grafico">
+                    <div class="datos">
+                        <button type="button" class="btn btn-primary" id="btn-info" onclick="chart_info()">OBTENER
+                            DATOS</button>
+                        <div class="card">
+                            <div class="card-body">
+                                NOTA: AL PRESIONAR EL BOTÓN OBTENER DATOS SE MOSTRARÁ UNA GRÁFICA DE LOS DIEZ PELÍCULAS
+                                BASADAS EN SU SCORE
+                            </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="row g-4">
+                        <canvas id="myChart" width="200" height="200"></canvas>
+
+                    </div>
+
+
                 </div>
-                
+                <div class="container-fluid pt-4 px-4" id="grafico">
+
+                    <!-- SELECT GRAFICO-->
+                    <div class="selected">
+                        <label for="select-primary" class="select-d">DURACIÓN DE PELÍCULAS</label>
+                        <div class="input-group">
+                            <select name="select" class="form-select" id="select-duration">
+                                <option selected>Seleccione la cantidad de películas a ver su duración</option>
+                                <option value="2">DOS PELÍCULAS</option>
+                                <option value="5">CINCO PELÍCULAS</option>
+                                <option value="10">DIEZ PELÍCULAS</option>
+                                <option value="22">TODAS LAS PELÍCULAS</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--FIN SELECT GRAFICO-->
+                    <div class="row g-4">
+                        <canvas id="myChart2" width="200" height="200"></canvas>
+
+                    </div>
+
+                </div>
             </div>
+
             <!-- Sales Chart End -->
 
             <!-- Widgets Start -->
