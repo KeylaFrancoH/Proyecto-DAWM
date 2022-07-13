@@ -7,11 +7,11 @@ var selector = document.querySelector('#bodycard');
 var busqueda = document.getElementById('buscar');
 const ctx = document.getElementById('myChart').getContext('2d');
 const ctx_select = document.getElementById('myChart2').getContext('2d');
-var nombres =[]
+var nombres = []
 var urls = [];
 var description = [];
 var scores = [];
-var duracion =[];
+var duracion = [];
 var table = document.getElementById("tabla").tBodies[0];
 
 
@@ -80,17 +80,17 @@ function seleccionar_film(datos) {
 
 selecc.addEventListener('change', (event) => {
     for (let index = 0; index < urls.length; index++) {
-        if(selecc.selectedIndex == index){
-            foto.src = urls[index-1]
-            foto.alt = nombres[index-1]
-            selector.textContent = description[index-1]
-        } 
+        if (selecc.selectedIndex == index) {
+            foto.src = urls[index - 1]
+            foto.alt = nombres[index - 1]
+            selector.textContent = description[index - 1]
+        }
     }
-    
+
 });
 
-function cargar_listas(datos){
-    for(valor of datos){
+function cargar_listas(datos) {
+    for (valor of datos) {
         urls.push(valor['image']);
         nombres.push(valor['title'])
         description.push(valor['description'])
@@ -99,7 +99,7 @@ function cargar_listas(datos){
     }
 }
 
-function chart_info(){
+function chart_info() {
 
     const myChart = new Chart(ctx, {
         type: 'bar',
@@ -137,14 +137,17 @@ function chart_info(){
 
     });
 }
-function chart_selec(value){
-    const myChart = new Chart(ctx_select, {
+
+
+chart.addEventListener('change', (event) => {
+
+    const myChart2 = new Chart(ctx_select, {
         type: 'bar',
         data: {
-            labels: nombres.slice(0, value),
+            labels: nombres.slice(0, 22),
             datasets: [{
                 label: 'Duración de las películas en minutos',
-                data: duracion.slice(0, value),
+                data: duracion.slice(0, 22),
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -172,23 +175,37 @@ function chart_selec(value){
             }
         }
 
+
     });
-  
-}
-chart.addEventListener('change', (event) => {
     
+
     if(chart.value == "2"){
-        console.log(chart_selec(2))
+       
+        myChart2.data.datasets[0]['labels'] = nombres.slice(0,2);
+        myChart2.data.datasets[0]['data'] = duracion.slice(0,2);
+        console.log(myChart2.data.datasets[0]['data'])
+        myChart2.update();
+        
     }
     if(chart.value == "5"){
-        chart_selec(5);
+        myChart2.data.datasets[0]['labels'] = nombres.slice(0,5);
+        myChart2.data.datasets[0]['data'] = duracion.slice(0,5);
+        console.log(myChart2.data.datasets[0]['data'])
+        myChart2.update();
     }
     if(chart.value == "10"){
-        chart_selec(10);
+        myChart2.data.datasets[0]['labels'] = nombres.slice(0,10);
+        myChart2.data.datasets[0]['data'] = duracion.slice(0,10);
+        console.log(myChart2.data.datasets[0]['data'])
+        myChart2.update();
     }
     if(chart.value == "22"){
-        chart_selec(22);
+        myChart2.data.datasets[0]['labels'] = nombres.slice(0,22);
+        myChart2.data.datasets[0]['data'] = duracion.slice(0,22);
+        console.log(myChart2.data.datasets[0]['data'])
+        myChart2.update();
     }
+    
 
-  
+
 });
