@@ -26,6 +26,7 @@
 }
 .datos{
     display: flex;
+    flex-direction: column;
     margin: 2em;
     gap: 1rem;
 }
