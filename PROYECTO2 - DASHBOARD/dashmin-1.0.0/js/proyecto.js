@@ -14,8 +14,6 @@ var scores = [];
 var duracion = [];
 var table = document.getElementById("tabla").tBodies[0];
 
-console.log(nombres)
-
 
 let URL = 'https://ghibliapi.herokuapp.com/films/'
 fetch(URL)
@@ -33,10 +31,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const myChart2 = new Chart(ctx_select, {
     type: 'bar',
     data: {
-        labels: ["Castle in the Sky", "Grave of the Fireflies", "My Neighbor Totoro", "Kiki's Delivery Service", "Only Yesterday", "Porco Rosso", "Pom Poko", "Whisper of the Heart", "Princess Mononoke", "My Neighbors the Yamadas", "Spirited Away", "The Cat Returns", "Howl's Moving Castle", "Tales from Earthsea", "Ponyo", "Arrietty", "From Up on Poppy Hill", "The Wind Rises", "The Tale of the Princess Kaguya", "When Marnie Was There", "The Red Turtle", "Earwig and the Witch"],
+        labels: nombres,
         datasets: [{
             label: 'Duración de las películas en minutos',
-            data: ["345", "833", "3333", "344"],
+            data: duracion,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -145,10 +143,10 @@ function chart_info() {
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: nombres.slice(0, 10),
+            labels: nombres.slice(0, 21),
             datasets: [{
-                label: 'score de las películas',
-                data: scores.slice(0, 10),
+                label: 'SCORE: ',
+                data: scores.slice(0, 21),
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
