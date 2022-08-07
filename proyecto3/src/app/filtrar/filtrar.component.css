@@ -10,7 +10,6 @@
 
 #row{
     display: flex;
-    gap: 3rem;
     width: 100%;
 }
 
@@ -58,4 +57,26 @@
 } 
 #row .back:hover{
     color: orange;
+  }
+
+  @media (min-width: 1200px) { 
+    .plato_fuerte {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+  }
+
+  @media (min-width: 1024px) { 
+    .plato_fuerte {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) { 
+    .plato_fuerte {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .seccion{
+        font-size: 1rem;
+    }
   }
