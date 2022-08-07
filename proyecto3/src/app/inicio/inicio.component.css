@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 * {
     box-sizing: border-box;
   }
@@ -10,6 +11,7 @@
     padding: 0;
   }
   .custom-form {
+    font-family: 'Marmelad', sans-serif;
     min-width: 300px;
     max-width: 60%;
     margin: 0px auto;
@@ -23,6 +25,7 @@
     margin-top: 10rem;
   }
   .custom-form input {
+    font-family: 'Marmelad', sans-serif;
     display: grid;
     margin: 2rem 0;
     width: 100%;
@@ -35,6 +38,7 @@
     background: #fcf6eb;
   }
   .custom-form button {
+    font-family: 'Marmelad', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     border: none;
