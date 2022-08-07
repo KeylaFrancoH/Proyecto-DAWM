@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+*{
+   
+    background: #f7f7f7;
+      
+}
+.cont{
+    display: flex;
+}
+
+#row{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+
+.seccion{
+    font-size: 1.2rem;
+    font-family: 'Marmelad', sans-serif;
+    font-weight: bolder;
+    padding-top: 0.5rem;
+}
+.nom_recet{
+    padding: 1rem 2rem;
+}
+
+.nom_recet .seccion{
+    background-color: rgb(243, 196, 109);
+    border-radius: 0.3rem;
+}
+
+.plato_fuerte {
+    padding: 16px;
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+}
+
+.plato_fuerte > mat-card {
+    width: 250px;
+    font-family: 'Marmelad', sans-serif;
+}
+
+.title{
+    font-weight: bolder;
+}
+
+.btn{
+    background-color: rgb(243, 196, 109);
+    font-family: 'Marmelad', sans-serif;
+}
+.select{
+    display: grid;
+    padding: 0 2rem;
+    font-family: 'Marmelad', sans-serif;
+    margin:1rem auto;
+    max-width: 600px;
+} 
+#row .back:hover{
+    color: orange;
+  }

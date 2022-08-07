@@ -9,7 +9,7 @@
 </div>
 <div class="select">
     <mat-form-field>
-        <mat-select placeholder="Tipo de plato"  name="operacion">
+        <mat-select placeholder="Tipo de plato"  name="comida">
           <mat-option *ngFor="let op of tipo_plato" [value]="op.valor" routerLink="/filtrar">
             {{op.valor}}
           </mat-option>
