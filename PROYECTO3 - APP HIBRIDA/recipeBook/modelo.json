@@ -1,0 +1,95 @@
+{
+    "model": {
+        "type": "Object",
+        "value": {
+            "idRecetas": {
+                "type": "incrementNumber",
+                "options": {
+                    "from": 1
+                }
+            },
+            "fechaNacimiento": {
+                "type": "faker",
+                "value": "date.between",
+                "options": [
+                    "1986-01-02",
+                    "2000-12-29"
+                ]
+            },
+            "author": {
+                "type": "Object",
+                "value": {
+                    "firstName": {
+                        "type": "faker",
+                        "value": "name.firstName"
+                    },
+                    "lastName": {
+                        "type": "faker",
+                        "value": "name.lastName"
+                    },
+                    "usuario": {
+                        "type": "faker",
+                        "value": "random.words"
+                    }
+                }
+            },
+            "mejoresRecetas": {
+                "type": "Object",
+                "value": {
+                    "Plato fuerte": {
+                        "type": "randomElementInArray",
+                        "value": [
+                            "Pollo a la naranja",
+                            "Carne ahumada",
+                            "chaulafan especial"
+                        ]
+                    },
+                    "Sopas": {
+                        "type": "randomElementInArray",
+                        "value": [
+                            "Sopa de Camaron",
+                            "Caldo de fideos",
+                            "Caldo de pollo"
+                        ]
+                    },
+                    "Ensaladas": {
+                        "type": "randomElementInArray",
+                        "value": [
+                            "Ensalada de lechuga",
+                            "Ensalada de tomate",
+                            "Ensalada de frutas",
+                            "Ensalada italiana"
+                        ]
+                    },
+                    "Desayunos": {
+                        "type": "randomElementInArray",
+                        "value": [
+                            "Desayuno continental",
+                            "Pancake con frutas",
+                            "Creal con leche"
+                        ]
+                    }
+                }
+            },
+            "CalificacionRecetas": {
+                "type": "randomNumberBetween",
+                "value": [
+                    1,
+                    5
+                ]
+            },
+            "password": {
+                "type": "randomNumberBetweenWithString",
+                "value": [
+                    1,
+                    25000
+                ],
+                "options": {
+                    "prefix": "#k",
+                    "suffix": "*j"
+                   
+                }
+            }
+        }
+    }
+}
