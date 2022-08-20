@@ -1,42 +1,43 @@
 const Sequelize = require('sequelize');
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('recetas', {
-    id: {
+    idRecetas: {
+      autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
     nombre: {
-      type: DataTypes.STRING(250),
-      allowNull: false
+      type: DataTypes.STRING(100),
+      allowNull: true
     },
     tipo: {
-      type: DataTypes.STRING(250),
-      allowNull: false
+      type: DataTypes.STRING(100),
+      allowNull: true
     },
     elaboracion: {
-      type: DataTypes.STRING(350),
-      allowNull: false
+      type: DataTypes.STRING(250),
+      allowNull: true
     },
     descripcion: {
-      type: DataTypes.STRING(350),
-      allowNull: false
+      type: DataTypes.STRING(250),
+      allowNull: true
     },
     tiempo: {
       type: DataTypes.STRING(250),
-      allowNull: false
+      allowNull: true
     },
     dificultad: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     imagen: {
-      type: DataTypes.STRING(100),
-      allowNull: false
+      type: DataTypes.STRING(250),
+      allowNull: true
     },
     fecha: {
-      type: DataTypes.STRING(100),
-      allowNull: false
+      type: DataTypes.STRING(250),
+      allowNull: true
     }
   }, {
     sequelize,
@@ -48,7 +49,7 @@ module.exports = function(sequelize, DataTypes) {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id" },
+          { name: "idRecetas" },
         ]
       },
     ]

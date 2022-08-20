@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "keyfer2021",
-    "database": "recipeBook",
+    "database": "bookRecipe",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
