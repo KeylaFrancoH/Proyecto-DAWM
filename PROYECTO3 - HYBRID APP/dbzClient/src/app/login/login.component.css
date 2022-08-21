@@ -1,0 +1,35 @@
+body {
+    background: blue;
+    overflow: hidden;
+    background-image: url(http://icons.iconarchive.com/icons/musett/dragon-ballz/256/Dragon-Ball-icon.png);
+    background-position: 50% 10%;
+  }
+
+.login{
+  display: grid;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+  button {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    background-color: rgb(243, 196, 109);
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    cursor: pointer;
+}
+
+mat-card-title{
+  text-transform: uppercase;
+  color: orange;
+}
+
+mat-card{
+  padding: 2rem;
+}

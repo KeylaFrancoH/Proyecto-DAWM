@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OnboardComponent } from './onboard/onboard.component';
-import { InicioComponent } from './inicio/inicio.component';
+import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
-import { FiltrarComponent } from './filtrar/filtrar.component';
-import { VisualizarComponent } from './visualizar/visualizar.component';
+import { InformacionComponent } from './informacion/informacion.component';
+import { VistaComponent } from './vista/vista.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -22,29 +24,34 @@ import {MatListModule} from '@angular/material/list';
 
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     OnboardComponent,
-    InicioComponent,
+    LoginComponent,
     PrincipalComponent,
-    FiltrarComponent,
-    VisualizarComponent
+    InformacionComponent,
+    VistaComponent
   ],
   imports: [
-    MatGridListModule,
-    MatIconModule,  
-    MatButtonModule,
-    FormsModule,
     BrowserModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
     BrowserAnimationsModule,
     MatCardModule,
     MatToolbarModule,
     MatSelectModule,
     MatFormFieldModule,
     MatListModule,
+    MatButtonModule,
+    FormsModule,
+    MatGridListModule,
+    MatIconModule,
     HttpClientModule
   ],
   providers: [],
