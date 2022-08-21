@@ -1,0 +1,68 @@
+{
+    "model": {
+        "type": "Object",
+        "value": {
+            "id": {
+                "type": "randomElementInArray",
+                "value": ["goku","vegeta","gohan","trunks","freezer","cell", "buu","beerus","piccolo","gotenks","hit","krillin","jiren","tien","17","18", "broly", "vegitto", "gogeta", "black"]
+            },
+            "fechaNacimiento": {
+                "type": "faker",
+                "value": "date.between",
+                "options": [
+                    "732-01-01",
+                    "780-12-29"
+                ]
+            },
+            "ataque": {
+                "type": "randomNumberBetween",
+                "value": [
+                    1000,
+                    500000
+                ]
+            }, 
+            "defensa": {
+                "type": "randomNumberBetween",
+                "value": [
+                    1000,
+                    500000
+                ]
+            },
+
+            "villanos": {
+                "type": "Object",
+                "value": {
+                    "nombre": {
+                        "type": "faker",
+                        "value": "name.firstName"
+                    },
+                    "raza": {
+                        "type": "randomElementInArray",
+                        "value": ["sayajin","humano","androide","icejin"]
+                    },
+                    "ataqueFirma": {
+                        "type": "faker",
+                        "value": "random.words"
+                    }
+                }
+            },
+            "tipoAtaque": {
+                "type": "Literal",
+                "value": [
+                   "ataques de energía", "levantamiento instantáneo", "super golpe hacia atrás", "Garlick Gun", "kame hame ha"
+                ]
+            },
+            "puntajeMision": {
+                "type": "randomNumberBetweenWithString",
+                "value": [
+                    1,
+                    25000
+                ],
+                "options": {
+                    "prefix": "Z"
+                   
+                }
+            }
+        }
+    }
+}
