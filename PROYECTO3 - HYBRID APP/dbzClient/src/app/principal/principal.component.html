@@ -1,1 +1,45 @@
-<p>principal works!</p>
+<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+
+<body>
+  <div class="p-0 pt-2 col-2" id="row">
+    <button mat-icon-button color="orange" aria-label="back" routerLink="/onboard">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
+  <mat-form-field appearance="standard">
+    <mat-label>Filtrar por raza</mat-label>
+    <input matInput placeholder="Buscar" #input>
+  </mat-form-field>
+
+
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Image Column -->
+    <ng-container matColumnDef="imagen">
+      <th mat-header-cell *matHeaderCellDef> Imagen</th>
+      <td mat-cell *matCellDef="let element" class='m-card-title'> <img src="{{element.imagen}}"
+          alt="{{element.nombre}}" width="50" height="80"> </td>
+    </ng-container>
+
+    <!-- Nombre Column -->
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+    </ng-container>
+    <ng-container matColumnDef="genero">
+      <th mat-header-cell *matHeaderCellDef> Género</th>
+      <td mat-cell *matCellDef="let element"> {{element.genero}}</td>
+    </ng-container>
+    <ng-container matColumnDef="raza" id="raza">
+      <th mat-header-cell *matHeaderCellDef> Raza</th>
+      <td mat-cell *matCellDef="let element"> {{element.raza}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</body>

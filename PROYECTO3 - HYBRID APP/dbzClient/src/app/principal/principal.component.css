@@ -1,0 +1,97 @@
+body{
+  background-image: url(https://i.pinimg.com/564x/7b/09/87/7b09871927b205b142b401b08a76acde.jpg);
+}
+table {
+    margin-top: .5rem;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  mat-form-field{
+    padding: 0 4rem;
+    display: grid;
+    justify-content: center;
+  }
+  mat-label, input{
+    border: solid white;
+    text-align: center;
+    color: white;
+  }
+  .table td,.table th{
+    padding:12px 15px;
+    border:1px solid #ddd;
+    text-align: center;
+    font-size:16px;
+  }
+  
+  .table th{
+    background-color: darkblue;
+    color:transparent;
+  }
+  
+  .table tbody tr:nth-child(even){
+    background-color: transparent;
+  }
+
+  th.mat-header-cell{
+    text-align: center !important;
+    font-size: 1rem;
+    font-weight: bold;
+    color: blue;
+    background-color: orange;
+  }
+  td.mat-cell{
+    text-align: center !important;
+  }
+  button {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    background-color: rgb(243, 196, 109);
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    cursor: pointer;
+}
+
+
+  /*responsive*/
+  
+  @media(max-width: 500px){
+    table thead{
+      display: none;
+    }
+  
+    .table, .table tbody, .table tr, .table td{
+      display: block;
+      width: 100%;
+    }
+    .table tr{
+      margin-bottom:15px;
+    }
+    .table td{
+      text-align: right;
+      padding-left: 50%;
+      text-align: right;
+      position: relative;
+    }
+    .table td::before{
+      content: attr(data-label);
+      position: absolute;
+      left:0;
+      width: 50%;
+      padding-left:15px;
+      font-size:15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  
+  
+  
+  
+  
+  

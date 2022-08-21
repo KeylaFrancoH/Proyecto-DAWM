@@ -21,7 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatListModule} from '@angular/material/list';
-
+import {MatTableModule} from '@angular/material/table';
+import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -31,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     PrincipalComponent,
     InformacionComponent,
-    VistaComponent
+    VistaComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +53,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     MatGridListModule,
     MatIconModule,
+    MatTableModule,
+    MatInputModule,
     HttpClientModule
   ],
   providers: [],

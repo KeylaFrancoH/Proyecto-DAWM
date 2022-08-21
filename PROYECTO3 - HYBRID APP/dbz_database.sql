@@ -27,15 +27,15 @@ create table transformaciones(
 
 
 INSERT INTO personajes VALUES
-('goku', 'Goku/Kakarotto', 'saiyajin', 'masculino', 50000, 'assets/goku.png'),
+('goku', 'Goku / Kakarotto', 'saiyajin', 'masculino', 50000, 'assets/goku.png'),
 ('vegeta', 'Vegeta IV', 'saiyajin', 'masculino', 50000, 'assets/vegeta.png'),
 ('piccolo', 'Piccolo', 'namekusejin', 'masculino', 50000, 'assets/piccolo.png'),
-('gohan', 'Son Gohan', 'humano/saiyajin', 'masculino', 50000, 'assets/gohan.png'),
+('gohan', 'Son Gohan', 'humano / saiyajin', 'masculino', 50000, 'assets/gohan.png'),
 ('freezer', 'Freezer', 'icejin', 'masculino', 50000, 'assets/frieza.png'),
-('cell', 'Cell', 'bioandroide', 'masculino', 50000, 'assets/cell.png'),
+('cell', 'Cell', 'androide', 'masculino', 50000, 'assets/cell.png'),
 ('buu', 'Majin Buu', 'saiyajin', 'masculino', 50000, 'assets/buu.png'),
 ('beerus', 'Bills', 'dios', 'masculino', 50000, 'assets/beerus.png'),
-('gotenks', 'Gotenks', 'humano/saiyajin', 'masculino', 50000, 'assets/gotenks.png'),
+('gotenks', 'Gotenks', 'humano / sayajin', 'masculino', 50000, 'assets/gotenks.png'),
 ('hit', 'Hit', 'desconocido', 'masculino', 50000, 'assets/hit.png'),
 ('krillin', 'Krillin', 'humano', 'masculino', 50000, 'assets/krillin.png'),
 ('jiren', 'Jiren', 'desconocido', 'masculino', 50000, 'assets/jiren.png'),
@@ -45,8 +45,8 @@ INSERT INTO personajes VALUES
 ('broly', 'Broly', 'sayajin', 'masculino', 50000, 'assets/broly.png'),
 ('vegitto', 'Vegitto', 'sayajin', 'masculino', 50000, 'assets/vegito.png'),
 ('gogeta', 'Gogeta', 'sayajin', 'masculino', 50000, 'assets/gogeta.png'),
-('black', 'Goku Black / zamasu', 'sayajin/kaioshin', 'masculino', 50000, 'assets/gokublack.png');
-INSERT INTO personajes VALUES ('trunks', 'Trunks Briefs', 'humano/sayajin', 'masculino', 50000, 'assets/trunks.png');
+('black', 'Goku Black / zamasu', 'híbrido', 'masculino', 50000, 'assets/gokublack.png');
+INSERT INTO personajes VALUES ('trunks', 'Trunks Briefs', 'híbrido', 'masculino', 50000, 'assets/trunks.png');
 
 
  insert into transformaciones (codigo, saga, id, transformacion ) values
@@ -63,6 +63,7 @@ INSERT INTO personajes VALUES ('trunks', 'Trunks Briefs', 'humano/sayajin', 'mas
 ('F2', 'Freezer', 'freezer', 'segunda forma'),
 ('F3', 'Freezer', 'freezer', 'tercera forma'),
 ('F4', 'Freezer', 'freezer', 'full power'),
+('BGR', 'Black', 'black', 'super sayajin rosé'),
 ('PO', 'Super Hero', 'piccolo', 'orange piccolo');
 
 INSERT INTO  usuarios VALUES ('jimmy','jlam2000'), ('keyla','kffh2001'),('user','12345');
