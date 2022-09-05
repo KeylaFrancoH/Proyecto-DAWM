@@ -19,13 +19,17 @@ export class PersonajesService {
     return this.http.get('http://localhost:3000/personajes')
   }
 
-  obtenerPersonakePorId(id: string) {
+  obtenerPersonajePorId(id: string) {
     return this.http.get('http://localhost:3000/personajes/' + id.toString())
   }
 
   obtenerPersonajePorRaza(raza: string) {
-    console.log(raza)
     return this.http.get(`http://localhost:3000/personajes/razas/${raza}`)
    
   }
+
+  obtenerTransformacionesPorID(id:string){
+    return this.http.get(`http://localhost:3000/transformaciones/personaje/${id}`)
+  }
+  
 }

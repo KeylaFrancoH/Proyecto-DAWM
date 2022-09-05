@@ -1,0 +1,20 @@
+
+button {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    background-color: rgb(243, 196, 109);
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    cursor: pointer;
+}
+
+.new_color{
+  background-color: orange;
+}
