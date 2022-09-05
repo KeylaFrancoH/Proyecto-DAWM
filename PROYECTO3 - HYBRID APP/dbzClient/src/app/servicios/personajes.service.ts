@@ -24,6 +24,8 @@ export class PersonajesService {
   }
 
   obtenerPersonajePorRaza(raza: string) {
-    return this.http.get('http://localhost:3000/personajes/' + raza.toString())
+    console.log(raza)
+    return this.http.get(`http://localhost:3000/personajes/razas/${raza}`)
+   
   }
 }

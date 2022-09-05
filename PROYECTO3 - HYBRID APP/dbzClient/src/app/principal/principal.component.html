@@ -27,7 +27,7 @@
         <div class="row v-align justify-content-center">
             <div class="col-12" id="list_id">
                 <mat-list role="list" class="lista">
-                    <mat-list-item role="listitem" class="next" *ngFor="let element of data" value="1" class="next" (click)="send(1)" routerLink="/informacion">
+                    <mat-list-item role="listitem" class="next" *ngFor="let element of data" value="1" class="next" (click)="send(element)" routerLink="/informacion">
                       <div class="contenido_lista">
                         <p>{{element}} </p>
                         <div>

@@ -1,3 +1,4 @@
+
 var DataTypes = require("sequelize").DataTypes;
 var _personajes = require("./personajes");
 var _transformaciones = require("./transformaciones");

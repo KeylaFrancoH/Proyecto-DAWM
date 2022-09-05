@@ -44,7 +44,7 @@ mat-list-item .nextf {
 }
 
 mat-list-item p {
-    text-transform: uppercase;
+  /*text-transform: uppercase;*/
     display: flex;
     justify-content: space-evenly;
 }

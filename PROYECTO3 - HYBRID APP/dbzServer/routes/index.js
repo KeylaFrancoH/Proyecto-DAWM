@@ -28,6 +28,15 @@ router.get('/personajes/:id', function(req, res, next) {
         })
 });
 
+router.get('/personajes/razas/:id', function(req, res, next) {
+    	
+  models.personajes.findAll({ where: { raza: req.params.id} })
+        .then(personaje=> {
+            res.json(personaje);
+        })
+});
+
+
 
 router.get('/transformaciones', function(req, res, next) {
     	
@@ -39,6 +48,15 @@ router.get('/transformaciones', function(req, res, next) {
  })
  .catch(error => res.status(400).send(error))
 });
+
+router.get('/transformaciones/personaje/:id', function(req, res, next) {
+    	
+  models.transformaciones.findAll({ where: { id: req.params.id} })
+  .then(transform=> {
+      res.json(transform);
+  })
+});
+
 
 
 router.get('/dbz', function(req, res, next) {

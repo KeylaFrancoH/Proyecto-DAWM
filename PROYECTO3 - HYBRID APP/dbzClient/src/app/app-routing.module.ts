@@ -5,13 +5,15 @@ import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { InformacionComponent } from './informacion/informacion.component';
 import { VistaComponent } from './vista/vista.component';
+import { InfoPersonajeComponent } from './info-personaje/info-personaje.component';
 const routes: Routes = [
   { path: "onboard", component: OnboardComponent },
   { path: "login", component: LoginComponent },
   { path: "principal", component: PrincipalComponent },
   { path: "principal/:id", component: PrincipalComponent },
   { path: "informacion", component: InformacionComponent },
-  { path: "visualizar", component: VistaComponent },
+  { path: "vista", component: VistaComponent },
+  {path: "info-personaje",component: InfoPersonajeComponent  },
   { path: "**", redirectTo: "onboard" }
 ];
 

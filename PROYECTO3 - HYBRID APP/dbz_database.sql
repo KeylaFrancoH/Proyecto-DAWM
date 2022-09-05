@@ -27,15 +27,15 @@ create table transformaciones(
 
 
 INSERT INTO personajes VALUES
-('goku', 'Goku / Kakarotto', 'saiyajin', 'masculino', 50000, 'assets/goku.png'),
-('vegeta', 'Vegeta IV', 'saiyajin', 'masculino', 50000, 'assets/vegeta.png'),
+('goku', 'Goku / Kakarotto', 'sayajin', 'masculino', 50000, 'assets/goku.png'),
+('vegeta', 'Vegeta IV', 'sayajin', 'masculino', 50000, 'assets/vegeta.png'),
 ('piccolo', 'Piccolo', 'namekusejin', 'masculino', 50000, 'assets/piccolo.png'),
-('gohan', 'Son Gohan', 'humano / saiyajin', 'masculino', 50000, 'assets/gohan.png'),
+('gohan', 'Son Gohan', 'hibrido', 'masculino', 50000, 'assets/gohan.png'),
 ('freezer', 'Freezer', 'icejin', 'masculino', 50000, 'assets/frieza.png'),
 ('cell', 'Cell', 'androide', 'masculino', 50000, 'assets/cell.png'),
-('buu', 'Majin Buu', 'saiyajin', 'masculino', 50000, 'assets/buu.png'),
+('buu', 'Majin Buu', 'demonio', 'masculino', 50000, 'assets/buu.png'),
 ('beerus', 'Bills', 'dios', 'masculino', 50000, 'assets/beerus.png'),
-('gotenks', 'Gotenks', 'humano / sayajin', 'masculino', 50000, 'assets/gotenks.png'),
+('gotenks', 'Gotenks', 'hibrido', 'masculino', 50000, 'assets/gotenks.png'),
 ('hit', 'Hit', 'desconocido', 'masculino', 50000, 'assets/hit.png'),
 ('krillin', 'Krillin', 'humano', 'masculino', 50000, 'assets/krillin.png'),
 ('jiren', 'Jiren', 'desconocido', 'masculino', 50000, 'assets/jiren.png'),
@@ -45,8 +45,8 @@ INSERT INTO personajes VALUES
 ('broly', 'Broly', 'sayajin', 'masculino', 50000, 'assets/broly.png'),
 ('vegitto', 'Vegitto', 'sayajin', 'masculino', 50000, 'assets/vegito.png'),
 ('gogeta', 'Gogeta', 'sayajin', 'masculino', 50000, 'assets/gogeta.png'),
-('black', 'Goku Black / zamasu', 'híbrido', 'masculino', 50000, 'assets/gokublack.png');
-INSERT INTO personajes VALUES ('trunks', 'Trunks Briefs', 'híbrido', 'masculino', 50000, 'assets/trunks.png');
+('black', 'Goku Black / zamasu', 'hibrido', 'masculino', 50000, 'assets/gokublack.png');
+INSERT INTO personajes VALUES ('trunks', 'Trunks Briefs', 'hibrido', 'masculino', 50000, 'assets/trunks.png');
 
 
  insert into transformaciones (codigo, saga, id, transformacion ) values

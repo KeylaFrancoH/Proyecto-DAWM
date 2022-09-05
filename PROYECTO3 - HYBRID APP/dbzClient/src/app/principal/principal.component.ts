@@ -34,7 +34,7 @@ export class PrincipalComponent implements OnInit {
       this.dataSource = respuesta as string[]
         for (let index = 0; index < this.dataSource.length; index++) {
           if (this.data.includes(this.dataSource[index][<any>"raza"])) {
-            console.log("se encuentra en el array")
+     
           } else {
             this.data.push(this.dataSource[index][<any>"raza"])
           }
@@ -42,7 +42,7 @@ export class PrincipalComponent implements OnInit {
         }
       
     })
-    console.log(this.data)
+
     
    
   }
