@@ -96,6 +96,14 @@ router.get('/dbzInfo', (req, res, next) => {
 
 });
 
+router.get('/dbzInfo/:id', (req, res, next) => {
 
+  axios.get(`https://dbzdata-default-rtdb.firebaseio.com/dbz/:id.json`)
+  .then( resAxios => {
+      res.json(resAxios.data)
+  })
+  .catch(err => console.log(err))
+
+});
 
 module.exports = router;

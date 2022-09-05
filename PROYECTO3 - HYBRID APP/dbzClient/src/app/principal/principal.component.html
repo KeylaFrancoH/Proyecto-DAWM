@@ -6,100 +6,65 @@
       <mat-icon>arrow_back</mat-icon>
     </button>
   </div>
+
   <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<div class="contenedor">
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <div class="contenedor">
 
     <mat-toolbar color="primary">
-        <mat-toolbar-row class="header1">
-        </mat-toolbar-row>
-        <mat-toolbar-row class="header">
-          <img class="logo" src="http://img05.deviantart.net/cef3/i/2015/122/c/4/dragon_ball_z__dbz__nuevo_logo_by_saodvd-d8rx6aw.png">
-            
-          <span>RAZAS</span>
-        </mat-toolbar-row>
+      <mat-toolbar-row class="header1">
+      </mat-toolbar-row>
+      <mat-toolbar-row class="header">
+        <img class="logo"
+          src="http://img05.deviantart.net/cef3/i/2015/122/c/4/dragon_ball_z__dbz__nuevo_logo_by_saodvd-d8rx6aw.png">
+
+        <span>RAZAS</span>
+      </mat-toolbar-row>
     </mat-toolbar>
 
+    <div class="row v-align justify-content-center">
 
+
+      <button mat-button routerLink="/vista">MISIONES</button>
+
+
+    </div>
     <div class="body">
-        <div class="row v-align justify-content-center">
-            <div class="col-12" id="list_id">
-                <mat-list role="list" class="lista">
-                    <mat-list-item role="listitem" class="next" *ngFor="let element of data" value="1" class="next" (click)="send(element)" routerLink="/informacion">
-                      <div class="contenido_lista">
-                        <p>{{element}} </p>
-                        <div>
-                        <img src="https://i.pinimg.com/originals/c4/78/e9/c478e92942832bf4a3eb2aef36078e13.png" alt="dragon ball 4" width="30" height="30">
+      <div class="row v-align justify-content-center">
+        <div class="col-12" id="list_id">
+          <mat-list role="list" class="lista">
+            <mat-list-item role="listitem" class="next" *ngFor="let element of data" value="1" class="next"
+              (click)="send(element)" routerLink="/informacion">
+              <div class="contenido_lista">
+                <p>{{element}} </p>
+                <div>
+                  <img src="https://i.pinimg.com/originals/c4/78/e9/c478e92942832bf4a3eb2aef36078e13.png"
+                    alt="dragon ball 4" width="30" height="30">
 
-                        </div>
-                      </div> 
-                     
-                       
-                        
-                    </mat-list-item>
-                </mat-list>
-            </div>
+                </div>
+              </div>
+
+
+
+            </mat-list-item>
+          </mat-list>
+
         </div>
+      </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</div>
-<script>
-    function valor(t){
-        console.log(t.value)
+  </div>
+  <script>
+    function valor(t) {
+      console.log(t.value)
     }
-</script>
-  <!--
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  </script>
 
 
-    <ng-container matColumnDef="imagen">
-      <th mat-header-cell *matHeaderCellDef> Imagen</th>
-      <td mat-cell *matCellDef="let element" class='m-card-title'> <img src="{{element.imagen}}"
-          alt="{{element.nombre}}" width="50" height="80"> </td>
-    </ng-container>
-
-    <ng-container matColumnDef="nombre">
-      <th mat-header-cell *matHeaderCellDef> Nombre </th>
-      <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
-    </ng-container>
-    <ng-container matColumnDef="genero">
-      <th mat-header-cell *matHeaderCellDef> Género</th>
-      <td mat-cell *matCellDef="let element"> {{element.genero}}</td>
-    </ng-container>
-    <ng-container matColumnDef="raza" id="raza">
-      <th mat-header-cell *matHeaderCellDef> Raza</th>
-      <td mat-cell *matCellDef="let element"> {{element.raza}} </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table> 
-  -->
-
-
-<!--
-  <div class="col-12 row ">
-
-    <mat-card class="noticia-card col-3 m-2" *ngFor="let noticia of arrPersonajes">
-        <mat-card-title>{{noticia.nombre}}</mat-card-title>
-        <mat-card-subtitle>{{noticia.raza}}</mat-card-subtitle>
-        <img mat-card-image src={{noticia.imagen}} alt={{noticia.id}}>
-        <mat-card-content>
-          <p>{{noticia.genero}}</p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>ABRIR</button>
-        </mat-card-actions>
-      </mat-card>
-</div>
--->
-
-
- 
 </body>

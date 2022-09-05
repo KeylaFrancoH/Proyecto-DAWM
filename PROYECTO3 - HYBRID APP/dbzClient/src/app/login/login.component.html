@@ -1,10 +1,11 @@
 <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+
 <body>
   <div class="p-0 pt-2 col-2" id="row">
-    <button mat-icon-button color="basic" aria-label="back"  routerLink="/onboard">  
-           <mat-icon>arrow_back</mat-icon> 
-    </button>  
-</div>
+    <button mat-icon-button color="basic" aria-label="back" routerLink="/onboard">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
   <div class="login">
     <mat-card class="example-card">
       <mat-card-header>
@@ -23,16 +24,17 @@
             <tr>
               <td>
                 <mat-form-field class="example-full-width">
-                  <input matInput placeholder="Contraseña" [(ngModel)]="password" type="password" name="password" required>
+                  <input matInput placeholder="Contraseña" [(ngModel)]="password" type="password" name="password"
+                    required>
                 </mat-form-field>
               </td>
             </tr>
           </table>
         </form>
-  
+
       </mat-card-content>
-      <mat-card-actions >
-        <button mat-raised-button (click)="login()" >Login</button>
+      <mat-card-actions>
+        <button mat-raised-button (click)="login()">Login</button>
       </mat-card-actions>
     </mat-card>
   </div>
