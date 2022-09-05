@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonajesService } from '../servicios/personajes.service';
-import {MatTableDataSource} from '@angular/material/table';
-import { COMMA, TAB, SPACE, ENTER } from '@angular/cdk/keycodes';
-import {MatChipInputEvent} from '@angular/material/chips'
-import { FormControl } from '@angular/forms';
+import { Personajes } from '../interfaz/personajes';
+import { character } from '../interfaz/personajes';
 
 
 @Component({
@@ -13,19 +11,44 @@ import { FormControl } from '@angular/forms';
 })
 
 export class PrincipalComponent implements OnInit {
-  
-  displayedColumns: string[] = ['imagen', 'nombre','genero' ,'raza'];
+  data: any = []
+  datos= {}
+  //displayedColumns: string[] = ['imagen', 'nombre','genero' ,'raza'];
 
-  dataSource = [];
+  dataSource: string[] = [];
   
-  constructor(private personajeService: PersonajesService) { }
+   //arrPersonajes: Array<Personajes>= [];
+  
+  constructor(private personajeService: PersonajesService) { 
+   /* this.personajeService.obtenerPersonajes().subscribe(respuesta => {
+      let personajesResponse  = respuesta as character;
+      
+      this.arrPersonajes= personajesResponse.personaje
+      console.log(personajesResponse.personaje)
+    })*/
+  }
 
+  
   ngOnInit(): void {
-    this.personajeService.obtenerPersonajes().subscribe(respuesta => {
-      this.dataSource = respuesta as any
-
+      this.personajeService.obtenerPersonajes().subscribe(respuesta => {
+      this.dataSource = respuesta as string[]
+        for (let index = 0; index < this.dataSource.length; index++) {
+          if (this.data.includes(this.dataSource[index][<any>"raza"])) {
+            console.log("se encuentra en el array")
+          } else {
+            this.data.push(this.dataSource[index][<any>"raza"])
+          }
+        
+        }
+      
     })
+    console.log(this.data)
+    
    
   }
- 
+  
+  send(value: any) {
+    this.personajeService.emit<string>(value);
+  }
+
 }

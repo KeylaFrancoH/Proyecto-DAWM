@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: "onboard", component: OnboardComponent },
   { path: "login", component: LoginComponent },
   { path: "principal", component: PrincipalComponent },
+  { path: "principal/:id", component: PrincipalComponent },
   { path: "informacion", component: InformacionComponent },
   { path: "visualizar", component: VistaComponent },
   { path: "**", redirectTo: "onboard" }

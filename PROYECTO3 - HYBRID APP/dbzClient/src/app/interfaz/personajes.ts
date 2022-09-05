@@ -6,3 +6,7 @@ export interface Personajes {
     kiLevel: number,
     imagen: string
 }
+
+export interface character {
+    personaje: Array<Personajes>
+}
