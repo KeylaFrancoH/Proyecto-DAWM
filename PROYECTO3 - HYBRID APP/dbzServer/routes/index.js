@@ -1,4 +1,5 @@
 var express = require('express');
+const axios = require('axios');
 var router = express.Router();
 
 const sequelize = require('../models/index.js').sequelize;
@@ -83,5 +84,18 @@ router.get('/usuarios', function(req, res, next) {
  })
  .catch(error => res.status(400).send(error))
 });
+
+//BASE DE DATOS NO RELACIONAL
+router.get('/dbzInfo', (req, res, next) => {
+
+  axios.get(`https://dbzdata-default-rtdb.firebaseio.com/dbz.json`)
+  .then( resAxios => {
+      res.json(resAxios.data)
+  })
+  .catch(err => console.log(err))
+
+});
+
+
 
 module.exports = router;
