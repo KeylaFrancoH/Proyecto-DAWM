@@ -10,6 +10,7 @@ var models = initModels(sequelize);
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+
 router.get('/personajes', function(req, res, next) {
     	
   models.personajes.findAll({
