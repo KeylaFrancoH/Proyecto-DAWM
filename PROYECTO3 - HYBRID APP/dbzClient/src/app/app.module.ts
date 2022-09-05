@@ -7,7 +7,6 @@ import { OnboardComponent } from './onboard/onboard.component';
 import { LoginComponent } from './login/login.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { InformacionComponent } from './informacion/informacion.component';
-import { VistaComponent } from './vista/vista.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,7 +33,6 @@ import { SelectComponent } from './select/select.component';
     LoginComponent,
     PrincipalComponent,
     InformacionComponent,
-    VistaComponent,
     InfoPersonajeComponent,
     SelectComponent,
   ],
