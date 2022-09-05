@@ -25,6 +25,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { InfoPersonajeComponent } from './info-personaje/info-personaje.component';
+import { SelectComponent } from './select/select.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { InfoPersonajeComponent } from './info-personaje/info-personaje.componen
     InformacionComponent,
     VistaComponent,
     InfoPersonajeComponent,
+    SelectComponent,
   ],
   imports: [
     BrowserModule,

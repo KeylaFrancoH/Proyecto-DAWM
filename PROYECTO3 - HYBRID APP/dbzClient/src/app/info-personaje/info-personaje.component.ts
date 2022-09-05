@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonajesService } from '../servicios/personajes.service';
 import { Personajes } from '../interfaz/personajes';
-import { Transformaciones } from '../interfaz/transformaciones';
+import { Transformaciones } from '../interfaz/data';
 
 @Component({
   selector: 'app-info-personaje',

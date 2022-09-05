@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+body{
+ background-image: url(https://i.pinimg.com/564x/82/9f/37/829f370654af6d71542cc7f636fd79c5.jpg);
+}
+button {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    background-color: rgb(243, 196, 109);
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    cursor: pointer;
+}
+
+.new_color{
+  background-color: orange;
+}
+
+.filtros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    justify-content: center;
+    padding-top: 500px;
+    padding-bottom: 50px;
+    color: orange;
+}
+mat-label{
+    color: orange;
+}
+table, th , td  {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+table th{
+    background-color: orange;
+    color: blue;
+    align-items: center;
+}
+

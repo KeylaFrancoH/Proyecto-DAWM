@@ -6,6 +6,7 @@ import { PrincipalComponent } from './principal/principal.component';
 import { InformacionComponent } from './informacion/informacion.component';
 import { VistaComponent } from './vista/vista.component';
 import { InfoPersonajeComponent } from './info-personaje/info-personaje.component';
+import { SelectComponent } from './select/select.component';
 const routes: Routes = [
   { path: "onboard", component: OnboardComponent },
   { path: "login", component: LoginComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: "principal/:id", component: PrincipalComponent },
   { path: "informacion", component: InformacionComponent },
   { path: "vista", component: VistaComponent },
-  {path: "info-personaje",component: InfoPersonajeComponent  },
+  { path: "info-personaje", component: InfoPersonajeComponent },
+  { path: "select", component: SelectComponent },
   { path: "**", redirectTo: "onboard" }
 ];
 

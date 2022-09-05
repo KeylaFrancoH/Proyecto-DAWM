@@ -13,19 +13,13 @@ import { character } from '../interfaz/personajes';
 export class PrincipalComponent implements OnInit {
   data: any = []
   datos= {}
-  //displayedColumns: string[] = ['imagen', 'nombre','genero' ,'raza'];
+
 
   dataSource: string[] = [];
   
-   //arrPersonajes: Array<Personajes>= [];
   
   constructor(private personajeService: PersonajesService) { 
-   /* this.personajeService.obtenerPersonajes().subscribe(respuesta => {
-      let personajesResponse  = respuesta as character;
-      
-      this.arrPersonajes= personajesResponse.personaje
-      console.log(personajesResponse.personaje)
-    })*/
+
   }
 
   
